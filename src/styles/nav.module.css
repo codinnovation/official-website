@@ -1,0 +1,141 @@
+.container {
+   width: 100%;
+   background-color: #008374;
+   height: 10vh;
+   position: sticky;
+   top: 0;
+   z-index: 900;
+}
+
+.container_items {
+   width: 80%;
+   margin: 0 auto;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr auto;
+}
+
+.container_1 {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   height: 100%;
+}
+
+.container_1 .logo {
+   width: auto;
+   height: auto;
+}
+
+.container_2 {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 100%;
+}
+
+.container_2 .lnk {
+   text-decoration: none;
+   color: #dbdbdb;
+   font-family: sans-serif;
+   font-size: 18px;
+   margin-right: 20%;
+   font-weight: 600;
+}
+
+.container_3 {
+   display: none;
+}
+
+@media (max-width:700px) {
+
+   .container {
+      z-index: 900;
+      position: sticky;
+      height: 12vh;
+   }
+
+   .container_items {
+      width: 90%;
+      z-index: 900;
+   }
+
+
+   .container_1 .logo {
+      width: 70%;
+      height: auto;
+   }
+
+   .container_3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .container_3 .MenuIcon {
+      color: #dbdbdb;
+      font-size: 30px;
+   }
+
+   .container_2 {
+      display: none;
+   }
+
+   .container_1 h1 {
+      font-size: 25px;
+   }
+
+   .menuContainer {
+      width: 60%;
+      height: 100vh;
+      top: 0;
+      position: fixed;
+      background-color: #fff;
+      z-index: 900;
+      box-shadow: 0px 0px 1000px rgba(0, 0, 0, 0.5);
+   }
+
+
+
+   .menuContainerLogo {
+      margin-top: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .menuContainerLogo .logo {
+      width: auto;
+      height: auto;
+   }
+
+   .menuContainerLinks {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 8%;
+      margin-top: 10%;
+   }
+
+   .menuContainerLinks .lnk {
+      text-decoration: none;
+      color: #008374;
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20%;
+   }
+
+   .menuContainerFooter {
+      margin-top: 45%;
+      padding: 11px;
+   }
+
+   .menuContainerFooter p {
+      text-align: center;
+      font-size: 0.9em;
+      font-family: serif;
+      color: #000;
+   }
+}
