@@ -10,7 +10,7 @@ export default function Home() {
   const [isSupportOpen, setIsSupportOpen] = useState(true);
 
   const followLink = () => {
-    const url = "https://codedu.vercel.app/comps/";
+    const url = "https://edu.codinnovations.tech/";
     window.open(url, "_blank");
   };
 
