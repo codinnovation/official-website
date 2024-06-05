@@ -37,15 +37,15 @@ function Index() {
 
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.container_items}>
-          <div className={styles.left_items}>
+      <div className={styles.glanceContainer}>
+        <div className={styles.glanceItemsContainer}>
+          <div className={styles.glanceLeftItems}>
             <Image
               src={GlanceImage}
               width={500}
               height={500}
               alt="img"
-              className={styles.img}
+              className={styles.glanceImage}
             />
           </div>
           {data.length === 0 ? (
@@ -54,15 +54,15 @@ function Index() {
             </Box>
           ) : (
             data.map((item, index) => (
-              <div className={styles.right_items} key={index}>
-                <div className={styles.right_items_header}>
+              <div className={styles.glanceRightItems} key={index}>
+                <div className={styles.glanceRightItemsHeader}>
                   <h1>{item.title}</h1>
                 </div>
-                <div className={styles.right_items_text}>
+                <div className={styles.glanceRightItemsText}>
                   <p>{item.content}</p>
                 </div>
 
-                <div className={styles.right_items_button}>
+                <div className={styles.glanceRightItemsButton}>
                   <button>Read more</button>
                 </div>
               </div>

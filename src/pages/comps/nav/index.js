@@ -2,69 +2,69 @@ import React, { useState } from "react";
 import styles from "../../../styles/nav.module.css";
 import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcoon from "@mui/icons-material/Close";
+import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import LogoImage from "../../../../public/logo-2.png";
 import MenuLogoImage from "../../../../public/logo-w-2.png";
 
-function Index() {
-  const [openMenu, setOpenMenu] = useState(false);
+function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setOpenMenu(!openMenu);
+    setMenuOpen(!menuOpen);
   };
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.container_items}>
-          <div className={styles.container_1}>
+      <div className={styles.navContainer}>
+        <div className={styles.navItemsContainer}>
+          <div className={styles.logoContainer}>
             <Image
               src={LogoImage}
-              width={180}
-              height={180}
+              width={900}
+              height={900}
               alt="cod_innovation"
               className={styles.logo}
             />
           </div>
 
-          <div className={styles.container_2}>
-            <Link href="/" className={styles.lnk}>
+          <div className={styles.navLinksContainer}>
+            <Link href="/" className={styles.navLink}>
               Home
             </Link>
-            <Link href="/comps/about-us/about" className={styles.lnk}>
+            <Link href="/comps/about-us/about" className={styles.navLink}>
               About
             </Link>
-            <Link href="/comps/service/service" className={styles.lnk}>
+            <Link href="/comps/service/service" className={styles.navLink}>
               Services
             </Link>
-            <Link href="/comps/team/" className={styles.lnk}>
+            <Link href="/comps/team/" className={styles.navLink}>
               Team
             </Link>
-            <Link href="/comps/softwares" className={styles.lnk}>
+            <Link href="/comps/softwares" className={styles.navLink}>
               Softwares
             </Link>
-            <Link href="/comps/blog" className={styles.lnk}>
+            <Link href="/comps/blog" className={styles.navLink}>
               Blog
             </Link>
-            <Link href="/comps/contact/" className={styles.lnk}>
+            <Link href="/comps/contact/" className={styles.navLink}>
               Contact
             </Link>
           </div>
 
-          <div className={styles.container_3}>
-            {openMenu ? (
-              <CloseIcoon className={styles.MenuIcon} onClick={toggleMenu} />
+          <div className={styles.menuIconContainer}>
+            {menuOpen ? (
+              <CloseIcon className={styles.menuIcon} onClick={toggleMenu} />
             ) : (
-              <MenuIcon className={styles.MenuIcon} onClick={toggleMenu} />
+              <MenuIcon className={styles.menuIcon} onClick={toggleMenu} />
             )}
           </div>
         </div>
       </div>
 
-      {openMenu && (
+      {menuOpen && (
         <>
           <div className={styles.menuContainer}>
-            <div className={styles.menuContainerLogo}>
+            <div className={styles.menuLogoContainer}>
               <Image
                 src={MenuLogoImage}
                 width={170}
@@ -74,31 +74,31 @@ function Index() {
               />
             </div>
 
-            <div className={styles.menuContainerLinks}>
-              <Link href="/" className={styles.lnk}>
+            <div className={styles.menuLinksContainer}>
+              <Link href="/" className={styles.navLink}>
                 Home
               </Link>
-              <Link href="/comps/about-us/about" className={styles.lnk}>
+              <Link href="/comps/about-us/about" className={styles.navLink}>
                 About
               </Link>
-              <Link href="/comps/service/service" className={styles.lnk}>
+              <Link href="/comps/service/service" className={styles.navLink}>
                 Services
               </Link>
-              <Link href="/comps/team" className={styles.lnk}>
+              <Link href="/comps/team" className={styles.navLink}>
                 Team
               </Link>
-              <Link href="/comps/softwares" className={styles.lnk}>
+              <Link href="/comps/softwares" className={styles.navLink}>
                 Softwares
               </Link>
-              <Link href="/comps/blog" className={styles.lnk}>
-              Blog
-            </Link>
-              <Link href="/comps/contact/" className={styles.lnk}>
+              <Link href="/comps/blog" className={styles.navLink}>
+                Blog
+              </Link>
+              <Link href="/comps/contact/" className={styles.navLink}>
                 Contact
               </Link>
             </div>
 
-            <div className={styles.menuContainerFooter}>
+            <div className={styles.menuFooterContainer}>
               <p>&copy; 2024 All Rights Reserved By Cod Innovations</p>
             </div>
           </div>
@@ -108,4 +108,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Navbar;

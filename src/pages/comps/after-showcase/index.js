@@ -7,33 +7,33 @@ import Brightness4OutlinedIcon from '@mui/icons-material/Brightness4Outlined';
 function Index() {
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.container_items}>
-          <div className={styles.container_item}>
-            <div className={styles.container_item_icon}>
+      <div className={styles.afterShowcaseContainer}>
+        <div className={styles.afterShowcaseItemsContainer}>
+          <div className={styles.afterShowcaseItem}>
+            <div className={styles.afterShowcaseItemIconContainer}>
               <ShieldOutlinedIcon className={styles.icon} />
             </div>
 
-            <div className={styles.container_item_text}>
+            <div className={styles.afterShowcaseItemTextContainer}>
               <h1>Courage Fuels Innovation</h1>
             </div>
           </div>
-          <div className={styles.container_item}>
-            <div className={styles.container_item_icon}>
+          <div className={styles.afterShowcaseItem}>
+            <div className={styles.afterShowcaseItemIconContainer}>
               <DarkModeOutlinedIcon className={styles.icon} />
             </div>
 
-            <div className={styles.container_item_text}>
+            <div className={styles.afterShowcaseItemTextContainer}>
               <h1>Obedience Drives Excellence</h1>
             </div>
           </div>
-          <div className={styles.container_item}>
-            <div className={styles.container_item_icon}>
+          <div className={styles.afterShowcaseItem}>
+            <div className={styles.afterShowcaseItemIconContainer}>
               <Brightness4OutlinedIcon className={styles.icon} />
             </div>
 
-            <div className={styles.container_item_text}>
-              <h1> Discipline Powers Progress </h1>
+            <div className={styles.afterShowcaseItemTextContainer}>
+              <h1>Discipline Powers Progress</h1>
             </div>
           </div>
         </div>

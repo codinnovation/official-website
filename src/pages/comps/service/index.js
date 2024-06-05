@@ -37,26 +37,26 @@ function Index() {
   }, []);
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.container_header}>
+      <div className={styles.serviceContainer}>
+        <div className={styles.serviceHeader}>
           <h1>Our services</h1>
         </div>
 
-        <div className={styles.container_items}>
+        <div className={styles.serviceItemsContainer}>
           {data.length === 0 ? (
             <Box sx={{ display: "flex" }}>
               <CircularProgress />
             </Box>
           ) : (
             data.slice(0,3).map((item, index) => (
-              <div className={styles.container_item} key={index}>
-                <div className={styles.container_item_icon}>
-                  <RecordVoiceOverIcon className={styles.icon} />
+              <div className={styles.serviceItem} key={index}>
+                <div className={styles.serviceItemIcon}>
+                  <RecordVoiceOverIcon className={styles.serviceIcon} />
                 </div>
-                <div className={styles.container_item_header}>
+                <div className={styles.serviceItemHeader}>
                   <h1>{item.title}</h1>
                 </div>
-                <div className={styles.container_item_text}>
+                <div className={styles.serviceItemText}>
                   <p>{item.content}</p>
                 </div>
               </div>
@@ -65,7 +65,7 @@ function Index() {
         </div>
 
         <div
-          className={styles.container_button}
+          className={styles.serviceButtonContainer}
           onClick={() => router.push("/comps/service/service")}
         >
           <button>View More</button>

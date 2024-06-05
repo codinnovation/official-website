@@ -11,57 +11,57 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 function Index() {
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.container_header}>
+      <div className={styles.footerContainer}>
+        <div className={styles.footerHeader}>
           <h1>GET in touch</h1>
         </div>
 
-        <div className={styles.container_items1}>
-          <div className={styles.container_item}>
-            <div className={styles.container_item_icon}>
-              <FmdGoodIcon className={styles.icon} />
+        <div className={styles.contactInfoContainer}>
+          <div className={styles.contactInfoItem}>
+            <div className={styles.contactInfoIcon}>
+              <FmdGoodIcon className={styles.footerIcon} />
             </div>
-            <div className={styles.container_item_text}>
+            <div className={styles.contactInfoText}>
               <p>Kumasi-Ashanti, Ghana</p>
             </div>
           </div>
 
-          <div className={styles.container_item}>
-            <div className={styles.container_item_icon}>
-              <PhoneIcon className={styles.icon} />
+          <div className={styles.contactInfoItem}>
+            <div className={styles.contactInfoIcon}>
+              <PhoneIcon className={styles.footerIcon} />
             </div>
-            <div className={styles.container_item_text}>
+            <div className={styles.contactInfoText}>
               <p>0597063145</p>
             </div>
           </div>
 
-          <div className={styles.container_item}>
-            <div className={styles.container_item_icon}>
-              <EmailIcon className={styles.icon} />
+          <div className={styles.contactInfoItem}>
+            <div className={styles.contactInfoIcon}>
+              <EmailIcon className={styles.footerIcon} />
             </div>
-            <div className={styles.container_item_text}>
+            <div className={styles.contactInfoText}>
               <p>codinnovations001@gmail.com</p>
             </div>
           </div>
         </div>
 
-        <div className={styles.container_items2}>
-          <div className={styles.container_items2_header}>
+        <div className={styles.socialMediaContainer}>
+          <div className={styles.socialMediaHeader}>
             <h1>Follow us</h1>
           </div>
-          <div className={styles.container_items2_item}>
-            <FacebookIcon className={styles.icon} />
-            <TwitterIcon className={styles.icon} />
-            <LinkedinIcon className={styles.icon} />
-            <InstagramIcon className={styles.icon} />
+          <div className={styles.socialMediaItems}>
+            <FacebookIcon className={styles.footerIcon} />
+            <TwitterIcon className={styles.footerIcon} />
+            <LinkedinIcon className={styles.footerIcon} />
+            <InstagramIcon className={styles.footerIcon} />
           </div>
         </div>
 
-        <div className={styles.container_line}>
-          <hr className={styles.hr} />
+        <div className={styles.footerLine}>
+          <hr className={styles.footerHr} />
         </div>
 
-        <div className={styles.container_last}>
+        <div className={styles.footerLast}>
           <p>&copy; 2024 All Rights Reserved By Cod Innovations</p>
         </div>
       </div>

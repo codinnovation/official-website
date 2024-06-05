@@ -37,10 +37,10 @@ function Index() {
   }, []);
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.container_items}>
-          <div className={styles.left_items}>
-            <div className={styles.left_items_header}>
+      <div className={styles.aboutContainer}>
+        <div className={styles.aboutItemsContainer}>
+          <div className={styles.aboutLeftItems}>
+            <div className={styles.aboutLeftItemsHeader}>
               <h1>About Us</h1>
             </div>
 
@@ -50,24 +50,24 @@ function Index() {
               </Box>
             ) : (
               data.map((data, index) => (
-                <div className={styles.left_items_text} key={index}>
+                <div className={styles.aboutLeftItemsText} key={index}>
                   <p>{data.content}</p>
                 </div>
               ))
             )}
 
-            <div className={styles.left_items_button}>
+            <div className={styles.aboutLeftItemsButton}>
               <button>Read more</button>
             </div>
           </div>
 
-          <div className={styles.right_items}>
+          <div className={styles.aboutRightItems}>
             <Image
               src={CodInnovationsLogo}
               alt="about_img.jpg"
               width={500}
               height={500}
-              className={styles.img}
+              className={styles.aboutImage}
             />
           </div>
         </div>

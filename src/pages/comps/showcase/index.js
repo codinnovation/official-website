@@ -6,7 +6,7 @@ import { get, ref } from "firebase/database";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import { useRouter } from "next/router";
 
-function Index() {
+function Showcase() {
   const [data, setData] = useState([]);
   const router = useRouter()
   const [isScroll, setIsScroll] = useState(false);
@@ -51,14 +51,14 @@ function Index() {
 
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.container_items}>
-          <div className={styles.container_1}>
-            <div className={styles.container_1_header}>
+      <div className={styles.showcaseContainer}>
+        <div className={styles.showcaseItemsContainer}>
+          <div className={styles.heroSection}>
+            <div className={styles.heroHeader}>
               <h1>Welcome To Cod Innovations</h1>
             </div>
 
-            <div className={styles.container_1_header2}>
+            <div className={styles.heroDescription}>
               <p>
                 Welcome to COD Innovations, where we blend courage, obedience,
                 and discipline to challenge the status, pursue groundbreaking
@@ -67,24 +67,24 @@ function Index() {
               </p>
             </div>
 
-            <div className={styles.container_1_button}>
-              <div className={styles.container_1_button_1}>
+            <div className={styles.heroButtonContainer}>
+              <div className={styles.contactButton}>
                 <button onClick={() => router.push("/comps/contact")}> Contact Us</button>
               </div>
-              <div className={styles.container_1_button_2}>
-                <PlayCircleIcon className={styles.PlayCircleIcon} />
+              <div className={styles.watchButton}>
+                <PlayCircleIcon className={styles.playIcon} />
                 <span>Watch Now</span>
               </div>
             </div>
           </div>
 
-          <div className={styles.container_2}>
+          <div className={styles.imageContainer}>
             <Image
               src="/hero-img.svg"
               width={600}
               height={600}
               alt="showase imag"
-              className={styles.img}
+              className={styles.image}
             />
           </div>
         </div>
@@ -93,4 +93,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Showcase;

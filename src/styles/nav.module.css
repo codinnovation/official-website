@@ -1,4 +1,4 @@
-.container {
+.navContainer {
    width: 100%;
    background-color: #008374;
    height: 10vh;
@@ -7,7 +7,7 @@
    z-index: 900;
 }
 
-.container_items {
+.navItemsContainer {
    width: 80%;
    margin: 0 auto;
    height: 100%;
@@ -15,26 +15,26 @@
    grid-template-columns: 1fr auto;
 }
 
-.container_1 {
+.logoContainer {
    display: flex;
    justify-content: flex-start;
    align-items: center;
    height: 100%;
 }
 
-.container_1 .logo {
+.logoContainer .logo {
    width: auto;
    height: auto;
 }
 
-.container_2 {
+.navLinksContainer {
    display: flex;
    justify-content: flex-end;
    align-items: center;
    height: 100%;
 }
 
-.container_2 .lnk {
+.navLinksContainer .navLink {
    text-decoration: none;
    color: #dbdbdb;
    font-family: sans-serif;
@@ -43,45 +43,44 @@
    font-weight: 600;
 }
 
-.container_3 {
+.menuIconContainer {
    display: none;
 }
 
 @media (max-width:700px) {
 
-   .container {
+   .navContainer {
       z-index: 900;
       position: sticky;
       height: 12vh;
    }
 
-   .container_items {
+   .navItemsContainer {
       width: 90%;
       z-index: 900;
    }
 
-
-   .container_1 .logo {
+   .logoContainer .logo {
       width: 70%;
       height: auto;
    }
 
-   .container_3 {
+   .menuIconContainer {
       display: flex;
       justify-content: center;
       align-items: center;
    }
 
-   .container_3 .MenuIcon {
+   .menuIconContainer .menuIcon {
       color: #dbdbdb;
       font-size: 30px;
    }
 
-   .container_2 {
+   .navLinksContainer {
       display: none;
    }
 
-   .container_1 h1 {
+   .logoContainer h1 {
       font-size: 25px;
    }
 
@@ -94,8 +93,6 @@
       z-index: 900;
       box-shadow: 0px 0px 1000px rgba(0, 0, 0, 0.5);
    }
-
-
 
    .menuContainerLogo {
       margin-top: 5%;
@@ -118,7 +115,7 @@
       margin-top: 10%;
    }
 
-   .menuContainerLinks .lnk {
+   .menuContainerLinks .navLink {
       text-decoration: none;
       color: #008374;
       font-family: sans-serif;
@@ -137,5 +134,83 @@
       font-size: 0.9em;
       font-family: serif;
       color: #000;
+   }
+}
+
+
+
+
+
+/*Laptops/desktops 1024 -1440 x 600 - 900*/
+@media (min-width: 1024px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 900px) {
+   .navContainer {
+      height: 13vh;
+   }
+
+   .navItemsContainer {
+      width: 95%;
+   }
+
+   .logoContainer .logo {
+      width: 40%;
+      height: auto;
+   }
+
+   .navLinksContainer .navLink {
+      font-size: 17px;
+      margin-right: 5%;
+   }
+}
+
+
+/*Laptops/desktops 1680 -1920 x 1050 - 1200*/
+@media (min-width: 1680px) and (max-width: 1920px) and (min-height: 1050px) and (max-height: 1200px) {
+   .navItemsContainer {
+      width: 95%;
+   }
+
+   .navLinksContainer .navLink {
+      font-size: 19px;
+      margin-right: 5%;
+   }
+
+   .logoContainer .logo {
+      width: 30%;
+      height: auto;
+   }
+}
+
+
+/*Laptops/desktops 2560 -3840 x 1440 - 2160*/
+@media (min-width: 2560px) and (max-width: 3840px) and (min-height: 1440px) and (max-height: 2160px) {
+   .navItemsContainer {
+      width: 95%;
+   }
+
+   .navLinksContainer .navLink {
+      font-size: 1.6em;
+      margin-right: 10%;
+   }
+
+   .logoContainer .logo {
+      width: 27%;
+      height: auto;
+   }
+}
+
+/*Laptops/desktops 4096 -5120 x 2304 - 2880*/
+@media (min-width: 4096px) and (max-width: 5120px) and (min-height: 2304px) and (max-height: 2880px) {
+   .navItemsContainer {
+      width: 95%;
+   }
+
+   .navLinksContainer .navLink {
+      font-size: 1.8em;
+      margin-right: 10%;
+   }
+
+   .logoContainer .logo {
+      width: 25%;
+      height: auto;
    }
 }

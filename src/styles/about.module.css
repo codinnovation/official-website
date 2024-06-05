@@ -1,47 +1,47 @@
-.container {
+.aboutContainer {
    display: flex;
    justify-content: center;
    align-items: center;
    margin-top: 20%;
 }
 
-.container_items {
+.aboutItemsContainer {
    display: grid;
    width: 60%;
    grid-template-columns: 1fr 1fr;
    gap: 30px;
 }
 
-.left_items {
+.aboutLeftItems {
    display: flex;
    justify-content: center;
    align-items: flex-start;
    flex-direction: column;
 }
 
-.left_items_header {
+.aboutLeftItemsHeader {
    width: 100%;
 }
 
-.left_items_header h1 {
+.aboutLeftItemsHeader h1 {
    text-transform: uppercase;
    font-family: sans-serif;
 }
 
-.left_items_text {
+.aboutLeftItemsText {
    margin-top: 3%;
 }
 
-.left_items_text p {
+.aboutLeftItemsText p {
    font-family: serif;
    font-size: 18px;
 }
 
-.left_items_button {
+.aboutLeftItemsButton {
    margin-top: 4%;
 }
 
-.left_items_button button {
+.aboutLeftItemsButton button {
    width: 200px;
    height: 40px;
    text-transform: uppercase;
@@ -52,7 +52,7 @@
    font-family: sans-serif;
 }
 
-.right_items {
+.aboutRightItems {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -60,38 +60,129 @@
    border-radius: 10px;
 }
 
-.right_items .img {
+.aboutRightItems .aboutImage {
    width: 100%;
    height: auto;
    padding: 20px;
 }
 
 @media (max-width: 700px) {
-   .container {
+   .aboutContainer {
       margin-top: 25%;
    }
 
-   .container_items {
+   .aboutItemsContainer {
       grid-template-columns: auto;
       width: 90%;
    }
 
-   .left_items_header h1 {
+   .aboutLeftItemsHeader h1 {
       font-size: 20px;
    }
 
-   .left_items_button {
+   .aboutLeftItemsButton {
       margin-top: 10%;
    }
 
-   .right_items {
+   .aboutRightItems {
       margin-top: 10%;
       height: 100%;
       width: 100%;
    }
-   .right_items .img {
+
+   .aboutRightItems .aboutImage {
       width: 100%;
       height: auto;
       padding: 25px;
+   }
+}
+
+
+
+
+
+
+
+
+/*Laptops/desktops 1024 -1440 x 600 - 900*/
+@media (min-width: 1024px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 900px) {
+
+   .aboutItemsContainer {
+      width: 95%;
+   }
+
+   .aboutLeftItemsHeader h1 {
+      font-size: 1.4em;
+   }
+
+   .aboutLeftItemsText p {
+      font-size: 1em;
+   }
+
+}
+
+
+/*Laptops/desktops 1680 -1920 x 1050 - 1200*/
+@media (min-width: 1680px) and (max-width: 1920px) and (min-height: 1050px) and (max-height: 1200px) {
+   .aboutItemsContainer {
+      width: 95%;
+   }
+
+   .aboutLeftItemsHeader h1 {
+      font-size: 1.6em;
+   }
+
+   .aboutLeftItemsText p {
+      font-size: 1.2em;
+   }
+
+   .aboutLeftItemsButton button {
+      width: 220px;
+      height: 50px;
+      font-size: 1em;
+   }
+
+}
+
+
+/*Laptops/desktops 2560 -3840 x 1440 - 2160*/
+@media (min-width: 2560px) and (max-width: 3840px) and (min-height: 1440px) and (max-height: 2160px) {
+   .aboutItemsContainer {
+      width: 95%;
+   }
+
+   .aboutLeftItemsHeader h1 {
+      font-size: 2em;
+   }
+
+   .aboutLeftItemsText p {
+      font-size: 1.5em;
+   }
+
+   .aboutLeftItemsButton button {
+      width: 270px;
+      height: 70px;
+      font-size: 1.2em;
+   }
+}
+
+/*Laptops/desktops 4096 -5120 x 2304 - 2880*/
+@media (min-width: 4096px) and (max-width: 5120px) and (min-height: 2304px) and (max-height: 2880px) {
+   .aboutItemsContainer {
+      width: 95%;
+   }
+
+   .aboutLeftItemsHeader h1 {
+      font-size: 2.5em;
+   }
+
+   .aboutLeftItemsText p {
+      font-size: 1.8em;
+   }
+
+   .aboutLeftItemsButton button {
+      width: 300px;
+      height: 80px;
+      font-size: 1.3em;
    }
 }
