@@ -23,7 +23,7 @@
 }
 
 .logoContainer .logo {
-   width: auto;
+   width: 20%;
    height: auto;
 }
 
@@ -38,8 +38,8 @@
    text-decoration: none;
    color: #dbdbdb;
    font-family: sans-serif;
-   font-size: 18px;
-   margin-right: 20%;
+   font-size: 1em;
+   margin-right: 10%;
    font-weight: 600;
 }
 
