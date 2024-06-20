@@ -67,8 +67,7 @@ function Navbar() {
             <div className={styles.menuLogoContainer}>
               <Image
                 src={MenuLogoImage}
-                width={170}
-                height={170}
+                
                 alt="cod_innovation"
                 className={styles.logo}
               />

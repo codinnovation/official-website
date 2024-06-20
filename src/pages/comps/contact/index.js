@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "../../../styles/contact.module.css";
 import Layout from "@/pages/layout";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
@@ -12,6 +12,8 @@ import Popover from "@mui/material/Popover";
 
 function Iindex() {
    const [open, setOpen] = useState(false);
+   const containerHeaderRef = useRef(null)
+
 
    const handleOpen = () => {
      setOpen(true);
@@ -31,11 +33,17 @@ function Iindex() {
      }, 1700);
    }, []);
 
+   useEffect(() => {
+    if (containerHeaderRef.current) {
+      containerHeaderRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <>
       <Layout>
         <div className={styles.container}>
-          <div className={styles.containerHeader}>
+          <div className={styles.containerHeader} ref={containerHeaderRef}>
             <h1>Contact Us</h1>
           </div>
 

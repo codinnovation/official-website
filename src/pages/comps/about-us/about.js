@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Layout from "@/pages/layout";
 import styles from "../../../styles/about/about.module.css";
 import { db } from "../../../../firebase.config";
@@ -12,6 +12,7 @@ import Popover from "@mui/material/Popover";
 function About() {
   const [data, setData] = useState([]);
   const [open, setOpen] = useState(false);
+  const containerHeaderRef = useRef(null);
 
   const handleOpen = () => {
     setOpen(true);
@@ -56,11 +57,17 @@ function About() {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    if (containerHeaderRef.current) {
+      containerHeaderRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <>
       <Layout>
         <div className={styles.container}>
-          <div className={styles.containerHeader}>
+          <div className={styles.containerHeader} ref={containerHeaderRef}>
             <h1>About Us</h1>
           </div>
 

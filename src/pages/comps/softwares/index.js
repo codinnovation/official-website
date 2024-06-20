@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import Layout from "@/pages/layout";
 import styles from "../../../styles/softwares.module.css";
@@ -12,6 +12,8 @@ import Popover from "@mui/material/Popover";
 function Index() {
   const [data, setData] = useState([]);
   const [open, setOpen] = useState(false);
+  const containerHeaderRef = useRef(null);
+
 
   const handleOpen = () => {
     setOpen(true);
@@ -56,6 +58,12 @@ function Index() {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    if (containerHeaderRef.current) {
+      containerHeaderRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <>
       <Head>
@@ -66,7 +74,7 @@ function Index() {
       </Head>
       <Layout>
         <div className={styles.container}>
-          <div className={styles.containerHeader}>
+          <div className={styles.containerHeader} ref={containerHeaderRef}>
             <h1>Available Resources</h1>
           </div>
 

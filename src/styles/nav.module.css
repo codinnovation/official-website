@@ -85,6 +85,10 @@
    }
 
    .menuContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
       width: 60%;
       height: 100vh;
       top: 0;
@@ -94,42 +98,42 @@
       box-shadow: 0px 0px 1000px rgba(0, 0, 0, 0.5);
    }
 
-   .menuContainerLogo {
-      margin-top: 5%;
+   .menuLogoContainer {
+      margin-top: 7%;
       display: flex;
       justify-content: center;
       align-items: center;
    }
 
-   .menuContainerLogo .logo {
-      width: auto;
+   .menuLogoContainer .logo {
+      width: 80%;
       height: auto;
    }
 
-   .menuContainerLinks {
+   .menuLinksContainer {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding: 8%;
-      margin-top: 10%;
+      padding: 0%;
+      margin-top: 0%;
    }
 
-   .menuContainerLinks .navLink {
+   .menuLinksContainer .navLink {
       text-decoration: none;
       color: #008374;
       font-family: sans-serif;
       font-size: 18px;
       font-weight: 600;
-      margin-bottom: 20%;
+      margin-bottom: 30%;
    }
 
-   .menuContainerFooter {
-      margin-top: 45%;
+   .menuFooterContainer {
+      margin-top: 0%;
       padding: 11px;
    }
 
-   .menuContainerFooter p {
+   .menuFooterContainer p {
       text-align: center;
       font-size: 0.9em;
       font-family: serif;

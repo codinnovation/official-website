@@ -11,12 +11,12 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 function Index() {
   const facebookLink = () => {
     const url =
-      "(link unavailable)";
+      "https://www.facebook.com/profile.php?id=61559909200927";
     window.open(url, "_blank");
   };
 
   const WhatsAppLink = () => {
-    const url = "(link unavailable)";
+    const url = "https://wa.me/+233500976882";
     window.open(url, "_blank");
   };
 

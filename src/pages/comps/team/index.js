@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "../../../styles/team.module.css";
 import Layout from "@/pages/layout";
 import Image from "next/image";
@@ -12,6 +12,8 @@ import Head from "next/head";
 
 function Index() {
   const [open, setOpen] = useState(false);
+  const containerHeaderRef = useRef(null);
+
 
   const handleOpen = () => {
     setOpen(true);
@@ -31,6 +33,13 @@ function Index() {
     }, 1700);
   }, []);
 
+  
+  useEffect(() => {
+    if (containerHeaderRef.current) {
+      containerHeaderRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <>
       <Head>
@@ -41,7 +50,7 @@ function Index() {
       </Head>
       <Layout>
         <div className={styles.container}>
-          <div className={styles.containerHeader}>
+          <div className={styles.containerHeader} ref={containerHeaderRef}>
             <h1>Meet Our Amazing Team</h1>
           </div>
 
