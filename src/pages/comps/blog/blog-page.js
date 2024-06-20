@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "../../../styles/blog-page.module.css";
 import Layout from "@/pages/layout";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 function BlogPage() {
   const router = useRouter();
@@ -18,6 +19,9 @@ function BlogPage() {
 
   return (
     <>
+    <Head>
+      <title>{parseData?.Title}</title>
+    </Head>
       <Layout>
         <div className={styles.container}>
           <div className={styles.containerHeader} ref={containerHeaderRef}>

@@ -8,32 +8,31 @@ import WhatsApp from "@mui/icons-material/WhatsApp";
 import Image from "next/image";
 import CodInnovationImage from "../../../../public/logo-w-2.png";
 import Popover from "@mui/material/Popover";
-
+import Head from "next/head";
 
 function Iindex() {
-   const [open, setOpen] = useState(false);
-   const containerHeaderRef = useRef(null)
+  const [open, setOpen] = useState(false);
+  const containerHeaderRef = useRef(null);
 
+  const handleOpen = () => {
+    setOpen(true);
+  };
 
-   const handleOpen = () => {
-     setOpen(true);
-   };
- 
-   const handleClose = () => {
-     setOpen(false);
-   };
- 
-   useEffect(() => {
-     setTimeout(() => {
-       handleOpen();
-     }, 100);
- 
-     setTimeout(() => {
-       handleClose();
-     }, 1700);
-   }, []);
+  const handleClose = () => {
+    setOpen(false);
+  };
 
-   useEffect(() => {
+  useEffect(() => {
+    setTimeout(() => {
+      handleOpen();
+    }, 100);
+
+    setTimeout(() => {
+      handleClose();
+    }, 1700);
+  }, []);
+
+  useEffect(() => {
     if (containerHeaderRef.current) {
       containerHeaderRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -42,6 +41,9 @@ function Iindex() {
   return (
     <>
       <Layout>
+        <Head>
+          <title>COD | Innovations - Contact Us</title>
+        </Head>
         <div className={styles.container}>
           <div className={styles.containerHeader} ref={containerHeaderRef}>
             <h1>Contact Us</h1>
@@ -99,10 +101,18 @@ function Iindex() {
             display: "flex",
             justifyContent: "center",
             alignContent: "center",
-            
           }}
         >
-          <p style={{textAlign:'center', padding:'10px', backgroundColor: '#f85a40', color: '#fff'}}>Viewing Contact Page</p>
+          <p
+            style={{
+              textAlign: "center",
+              padding: "10px",
+              backgroundColor: "#f85a40",
+              color: "#fff",
+            }}
+          >
+            Viewing Contact Page
+          </p>
         </Popover>
       </Layout>
     </>

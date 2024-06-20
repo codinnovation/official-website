@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 import Image from "next/image";
 import Popover from "@mui/material/Popover";
+import Head from "next/head";
 
 function About() {
   const [data, setData] = useState([]);
@@ -66,6 +67,9 @@ function About() {
   return (
     <>
       <Layout>
+        <Head>
+          <title>COD | Innovations - About Us</title>
+        </Head>
         <div className={styles.container}>
           <div className={styles.containerHeader} ref={containerHeaderRef}>
             <h1>About Us</h1>
