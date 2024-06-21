@@ -4,13 +4,20 @@ import Comps from "./comps";
 import SupportIcon from "@mui/icons-material/SupportAgent";
 import styles from "../styles/Home.module.css";
 import CloseIcon from "@mui/icons-material/Close";
+import Image from "next/image";
 import CodInnovationLogo from "../../public/logo-w-1.png";
+import EventImage from "../../public/event.png";
 
 export default function Home() {
   const [isSupportOpen, setIsSupportOpen] = useState(true);
 
   const followLink = () => {
     const url = "https://edu.codinnovations.tech/";
+    window.open(url, "_blank");
+  };
+
+  const followLinkToEvent = () => {
+    const url = "https://forms.gle/qbyVuFAJybHp6mYZ9";
     window.open(url, "_blank");
   };
 
@@ -43,12 +50,12 @@ export default function Home() {
               <CloseIcon className={styles.icon} />
             </div>
             <div className={styles.container_header}>
-              <h1>
-                Are you interested in building a career in tech? Do you want to
-                learn web development and software development skills to create
-                dynamic web applications?
-              </h1>
-              <button onClick={followLink}>Learn Now!</button>
+              <Image
+                src={EventImage}
+                alt="event-image"
+                className={styles.image}
+              />
+              <button onClick={followLinkToEvent}>Register Now!</button>
             </div>
           </div>
         </>
