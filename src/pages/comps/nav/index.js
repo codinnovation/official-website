@@ -46,6 +46,9 @@ function Navbar() {
             <Link href="/comps/blog" className={styles.navLink}>
               Blog
             </Link>
+            <Link href="/comps/event" className={styles.navLink}>
+              Events
+            </Link>
             <Link href="/comps/contact/" className={styles.navLink}>
               Contact
             </Link>
@@ -67,7 +70,6 @@ function Navbar() {
             <div className={styles.menuLogoContainer}>
               <Image
                 src={MenuLogoImage}
-                
                 alt="cod_innovation"
                 className={styles.logo}
               />
@@ -91,6 +93,9 @@ function Navbar() {
               </Link>
               <Link href="/comps/blog" className={styles.navLink}>
                 Blog
+              </Link>
+              <Link href="/comps/event" className={styles.navLink}>
+                Events
               </Link>
               <Link href="/comps/contact/" className={styles.navLink}>
                 Contact
