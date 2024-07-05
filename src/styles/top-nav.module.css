@@ -78,14 +78,27 @@
 
 
 
-/*Laptops/desktops 1024 -1440 x 600 - 900*/
-@media (min-width: 1024px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 900px) {
+/*Laptops/desktops 1024 -1440 x 600 - 1024*/
+@media (min-width: 1024px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 1024px) {
+   .navItemsContainer {
+      width: 99%;
+   }
+
+   .contactInfoContainer .contactItem span {
+      font-size: 0.9em;
+      font-family: serif;
+   }
+}
+
+
+/*Laptops/desktops 1536 - 1600 x 864 - 900*/
+@media (min-width: 1536px) and (max-width: 1600px) and (min-height: 864px) and (max-height: 900px) {
    .navItemsContainer {
       width: 95%;
    }
+
    .contactInfoContainer .contactItem span {
       font-size: 1em;
-      font-family: serif;
    }
 }
 
@@ -95,6 +108,7 @@
    .navItemsContainer {
       width: 95%;
    }
+
    .contactInfoContainer .contactItem span {
       font-size: 1em;
       font-family: serif;
@@ -107,6 +121,7 @@
    .navItemsContainer {
       width: 95%;
    }
+
    .contactInfoContainer .contactItem span {
       font-size: 1em;
       font-family: serif;
@@ -119,8 +134,18 @@
       width: 95%;
       padding-top: 20px;
    }
+
    .contactInfoContainer .contactItem span {
       font-size: 1.2em;
       font-family: serif;
+   }
+}
+
+
+
+/*Tablets 768 - 1024 x 1024 - 1366*/
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1366px) {
+   .navItemsContainer{
+      width: 100%;
    }
 }

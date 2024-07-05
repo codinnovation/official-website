@@ -83,6 +83,43 @@
     font-size: 15px;
     margin-bottom: 10px;
   }
+
+  .containerHeader .image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*Laptops/desktops 1024 -1440 x 600 - 900*/
+@media (min-width: 1024px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 900px) {
+  .containerContent {
+    top: 67%;
+    width: 20%;
+  }
+}
+
+/*Tablets 768 - 1024 x 1024 - 1366*/
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1366px) {
+  .supportContainer {
+    top: 95%;
+  }
+
+  .icon {
+    font-size: 70px;
+  }
+
+  .containerContent {
+    top: 73%;
+    right: 7%;
+    width: 35%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .containerHeader h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
   .containerHeader .image {
     width: 100%;
     height: auto;
