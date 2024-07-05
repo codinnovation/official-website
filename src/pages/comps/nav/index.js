@@ -43,6 +43,9 @@ function Navbar() {
             <Link href="/comps/softwares" className={styles.navLink}>
               Softwares
             </Link>
+            <Link href="/grow-your-business" className={styles.navLink}>
+              Business
+            </Link>
             <Link href="/comps/blog" className={styles.navLink}>
               Blog
             </Link>
@@ -93,6 +96,9 @@ function Navbar() {
               </Link>
               <Link href="/comps/blog" className={styles.navLink}>
                 Blog
+              </Link>
+              <Link href="/grow-your-business" className={styles.navLink}>
+                Business
               </Link>
               <Link href="/comps/event" className={styles.navLink}>
                 Events

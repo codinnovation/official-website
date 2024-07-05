@@ -7,6 +7,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import CodInnovationLogo from "../../public/logo-w-1.png";
 import EventImage from "../../public/event.png";
+import PromoImage from "../../public/grow your business with COD innovations.jpg";
 
 export default function Home() {
   const [isSupportOpen, setIsSupportOpen] = useState(true);
@@ -31,9 +32,8 @@ export default function Home() {
       </Head>
       <div>
         <Comps />
-
         <div
-          className={styles.support_container}
+          className={styles.supportContainer}
           onClick={() => setIsSupportOpen(true)}
         >
           <SupportIcon className={styles.icon} />
@@ -42,20 +42,22 @@ export default function Home() {
 
       {isSupportOpen && (
         <>
-          <div className={styles.container}>
+          <div className={styles.containerContent}>
             <div
-              className={styles.container_close}
+              className={styles.closeIcon}
               onClick={() => setIsSupportOpen(false)}
             >
               <CloseIcon className={styles.icon} />
             </div>
-            <div className={styles.container_header}>
+            <div className={styles.containerHeader}>
               <Image
-                src={EventImage}
+                src={PromoImage}
                 alt="event-image"
                 className={styles.image}
+                width={900}
+                height={900}
               />
-              <button onClick={followLinkToEvent}>Register Now!</button>
+              <button onClick={followLinkToEvent}>Let&apos;s Talk!</button>
             </div>
           </div>
         </>
