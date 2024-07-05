@@ -1,9 +1,5 @@
 .businessContainer {
    position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
    height: 100vh;
    overflow: hidden;
    width: 100%;
@@ -24,13 +20,18 @@
    position: absolute;
    width: 100%;
    text-align: center;
-   animation: fadeInSlideUp 3s ease-in-out forwards;
+   animation: fadeInSlideUp 2s ease-in-out forwards;
    background-color: rgba(0, 0, 0, 0.2);
    padding: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
 }
 
 .contentContainer h1 {
-   animation: fadeInSlideUp 3s ease-in-out forwards;
+   animation: fadeInSlideUp 2s ease-in-out forwards;
    text-align: center;
    font-family: Helvetica, ;
 }
@@ -59,11 +60,121 @@
 }
 
 
+.newContentContainer {
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   height: 100vh;
+   overflow-y: scroll;
+}
+
+.newContentContainerHeader {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 1%;
+}
+
+.newContentContainerHeader h1 {
+   font-size: 2em;
+   color: #fff;
+   font-family: Helvetica;
+}
+
+.newContentContainerHeader p {
+   font-size: 1.5em;
+   margin-top: 20px;
+   color: #eeeeee;
+}
+
+.introductionContainer {
+   width: 50%;
+   margin: 2% auto;
+}
+
+.introductionContainer p {
+   font-size: 1.3em;
+   color: #eeeeee;
+}
+
+.offerContainer {
+   width: 50%;
+   margin: 2% auto;
+}
+
+.offerContainer p {
+   font-size: 1.3em;
+   color: #eeeeee;
+}
+
+.offerContainer h1 {
+   font-size: 1.8em;
+   color: #f85a40;
+   margin-top: 4%;
+   text-transform: uppercase;
+}
+
+.offerContainer ul li {
+   font-size: 1.3em;
+   color: #fff;
+   text-align: left;
+   margin-bottom: 20px;
+}
+
+.cta {
+   margin-top: 4%;
+}
+
+.cta button {
+   width: 200px;
+   height: 60px;
+   background-color: #f85a40;
+   color: #fff;
+   font-weight: 700;
+   font-size: 1.3em;
+}
+
 @media (max-width:700px) {
-   .contentContainer h1:nth-child(1){
+   .contentContainer h1:nth-child(1) {
       font-size: 2em;
    }
-   .contentContainer h1:nth-child(2){
+
+   .contentContainer h1:nth-child(2) {
       font-size: 2em;
+   }
+
+   .newContentContainerHeader h1 {
+      font-size: 1.2em;
+   }
+
+   .newContentContainerHeader p {
+      font-size: 1em;
+   }
+
+   .introductionContainer {
+      width: 95%;
+      margin: 5% auto;
+   }
+
+   .introductionContainer p {
+      font-size: 1.1em;
+   }
+
+   .offerContainer {
+      width: 95%;
+      margin: 5% auto;
+   }
+
+   .offerContainer h1 {
+      font-size: 1.2em;
+   }
+
+   .offerContainer p {
+      font-size: 1.1em;
+   }
+
+   .offerContainer ul li {
+      font-size: 1em;
    }
 }
