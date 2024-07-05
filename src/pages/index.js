@@ -18,7 +18,7 @@ export default function Home() {
   };
 
   const followLinkToEvent = () => {
-    const url = "https://forms.gle/qbyVuFAJybHp6mYZ9";
+    const url = "/grow-your-business";
     window.open(url, "_blank");
   };
 
