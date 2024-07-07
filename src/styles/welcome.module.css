@@ -1,20 +1,22 @@
 .welcomeContainer {
-   position: relative;
    height: 100vh;
-   overflow: hidden;
    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .backgroundImage {
-   background-image: url('/logo-w-2.png');
-   background-size: contain;
-   background-position: center;
-   background-repeat: no-repeat;
    filter: brightness(50%);
-   height: 100%;
-   width: 100%;
-   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    animation: fadeInSlideUp 2.5s ease-in-out forwards;
+}
+
+.backgroundImage .image {
+   height: auto;
+   width: 70%;
 }
 
 @keyframes fadeInSlideUp {
@@ -28,26 +30,9 @@
 }
 
 @media (max-width:700px) {
- 
-
-   .introductionContainer p {
-      font-size: 1.1em;
+   .backgroundImage .image {
+      height: auto;
+      width: 90%;
    }
 
-   .offerContainer {
-      width: 95%;
-      margin: 5% auto;
-   }
-
-   .offerContainer h1 {
-      font-size: 1.2em;
-   }
-
-   .offerContainer p {
-      font-size: 1.1em;
-   }
-
-   .offerContainer ul li {
-      font-size: 1em;
-   }
 }
