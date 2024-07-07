@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Comps from "./comps";
 import SupportIcon from "@mui/icons-material/SupportAgent";
 import styles from "../styles/Home.module.css";
@@ -7,10 +7,31 @@ import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import CodInnovationLogo from "../../public/logo-w-1.png";
 import EventImage from "../../public/event.png";
+import WelcomePage from "../pages/welcome-page";
 import PromoImage from "../../public/grow your business with COD innovations.jpg";
 
 export default function Home() {
-  const [isSupportOpen, setIsSupportOpen] = useState(true);
+  const [isSupportOpen, setIsSupportOpen] = useState(false);
+  const [showFirstContent, setShowFirstContent] = useState(true);
+
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsSupportOpen(true);
+    }, 3700);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowFirstContent(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
 
   const followLink = () => {
     const url = "https://edu.codinnovations.tech/";
@@ -31,7 +52,7 @@ export default function Home() {
         <link rel="icon" href="/logo-w-2.png" />
       </Head>
       <div>
-        <Comps />
+        {showFirstContent ? <WelcomePage /> : <Comps />}
         <div
           className={styles.supportContainer}
           onClick={() => setIsSupportOpen(true)}
