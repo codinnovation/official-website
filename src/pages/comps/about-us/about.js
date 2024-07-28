@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import Layout from "@/pages/layout";
 import styles from "../../../styles/about/about.module.css";
 import { db } from "../../../../firebase.config";
@@ -9,11 +9,35 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Image from "next/image";
 import Popover from "@mui/material/Popover";
 import Head from "next/head";
+import { HeroContext } from "@/pages/context/heroContext";
 
 function About() {
   const [data, setData] = useState([]);
   const [open, setOpen] = useState(false);
   const containerHeaderRef = useRef(null);
+
+  const {
+    setHeroHeader,
+    heroHeader,
+    heroDescription,
+    setHeroDescription,
+    heroImage,
+    setHeroImage,
+  } = useContext(HeroContext);
+
+  useEffect(() => {
+    setHeroImage("/ig.png");
+  }, [heroImage, setHeroImage]);
+
+  useEffect(() => {
+    setHeroHeader("Who We Are");
+  }, [setHeroHeader, heroHeader]);
+
+  useEffect(() => {
+    setHeroDescription(
+      "Welcome to COD Innovations, where we blend courage, obedience, and discipline to challenge the status, pursue groundbreaking ideas, and consistently deliver exceptional results, shaping the future of innovation."
+    );
+  }, [heroDescription, setHeroDescription]);
 
   const handleOpen = () => {
     setOpen(true);
@@ -71,7 +95,7 @@ function About() {
           <title>COD | Innovations - About Us</title>
         </Head>
         <div className={styles.container}>
-          <div className={styles.containerHeader} ref={containerHeaderRef}>
+          <div className={styles.containerHeader}>
             <h1>About Us</h1>
           </div>
 

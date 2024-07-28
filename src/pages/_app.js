@@ -1,9 +1,12 @@
 import "@/styles/globals.css";
+import { HeroProvider } from "./context/heroContext";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Component {...pageProps} />
+      <HeroProvider>
+        <Component {...pageProps} />
+      </HeroProvider>
     </>
   );
 }

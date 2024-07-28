@@ -7,6 +7,7 @@ import FacebookIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedinIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import Link from "next/link";
 
 function Index() {
   return (
@@ -62,7 +63,10 @@ function Index() {
         </div>
 
         <div className={styles.footerLast}>
-          <p>&copy; 2024 All Rights Reserved By Cod Innovations</p>
+          <p>
+            &copy; 2024 All Rights Reserved By Cod Innovations -
+            <Link href="/terms-&-conditions">Terms & Conditions</Link>
+          </p>
         </div>
       </div>
     </>

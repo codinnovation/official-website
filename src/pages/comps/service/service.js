@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import Head from "next/head";
 import Layout from "@/pages/layout";
 import styles from "../../../styles/services/service.module.css";
@@ -8,11 +8,25 @@ import CircularProgress from "@mui/material/CircularProgress";
 import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
 import Box from "@mui/material/Box";
 import Popover from "@mui/material/Popover";
+import { HeroContext } from "@/pages/context/heroContext";
 
 function Service() {
   const [data, setData] = useState([]);
   const [open, setOpen] = useState(false);
   const containerHeaderRef = useRef(null)
+
+  const { setHeroHeader, heroHeader, heroDescription, setHeroDescription } =
+  useContext(HeroContext);
+
+  useEffect(() => {
+    setHeroHeader("Our Services");
+  }, [setHeroHeader, heroHeader]);
+
+  useEffect(() => {
+    setHeroDescription(
+      "Welcome to COD Innovations, where we blend courage, obedience, and discipline to challenge the status, pursue groundbreaking ideas, and consistently deliver exceptional results, shaping the future of innovation."
+    );
+  }, [heroDescription, setHeroDescription]);
 
   const handleOpen = () => {
     setOpen(true);
@@ -74,7 +88,7 @@ function Service() {
       </Head>
       <Layout>
         <div className={styles.container}>
-          <div className={styles.containerHeader} ref={containerHeaderRef}>
+          <div className={styles.containerHeader}>
             <h1>Our Services</h1>
           </div>
 

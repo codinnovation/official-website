@@ -1,15 +1,39 @@
-import React, { useEffect, useState } from "react";
+// components/Showcase.js
+import React, { useEffect, useState, useContext } from "react";
 import styles from "../../../styles/showcase.module.css";
 import Image from "next/image";
 import { db } from "../../../../firebase.config";
 import { get, ref } from "firebase/database";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import { useRouter } from "next/router";
+import { HeroContext } from "../../context/heroContext";
 
 function Showcase() {
+  const {
+    setHeroHeader,
+    heroHeader,
+    heroDescription,
+    setHeroDescription,
+    heroImage,
+    setHeroImage,
+  } = useContext(HeroContext);
   const [data, setData] = useState([]);
-  const router = useRouter()
+  const router = useRouter();
   const [isScroll, setIsScroll] = useState(false);
+
+  useEffect(() => {
+    setHeroHeader("Welcome To COD Innovations");
+  }, [setHeroHeader, heroHeader]);
+
+  useEffect(() => {
+    setHeroImage("/hero-img.svg");
+  }, [heroImage, setHeroImage]);
+
+  useEffect(() => {
+    setHeroDescription(
+      "Welcome to COD Innovations, where we blend courage, obedience, and discipline to challenge the status, pursue groundbreaking ideas, and consistently deliver exceptional results, shaping the future of innovation."
+    );
+  }, [heroDescription, setHeroDescription]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -55,21 +79,19 @@ function Showcase() {
         <div className={styles.showcaseItemsContainer}>
           <div className={styles.heroSection}>
             <div className={styles.heroHeader}>
-              <h1>Welcome To Cod Innovations</h1>
+              <h1>{heroHeader}</h1>
             </div>
 
             <div className={styles.heroDescription}>
-              <p>
-                Welcome to COD Innovations, where we blend courage, obedience,
-                and discipline to challenge the status, pursue groundbreaking
-                ideas, and consistently deliver exceptional results, shaping the
-                future of innovation
-              </p>
+              <p>{heroDescription}</p>
             </div>
 
             <div className={styles.heroButtonContainer}>
               <div className={styles.contactButton}>
-                <button onClick={() => router.push("/comps/contact")}> Contact Us</button>
+                <button onClick={() => router.push("/comps/contact")}>
+                  {" "}
+                  Contact Us
+                </button>
               </div>
               <div className={styles.watchButton}>
                 <PlayCircleIcon className={styles.playIcon} />
@@ -80,9 +102,9 @@ function Showcase() {
 
           <div className={styles.imageContainer}>
             <Image
-              src="/hero-img.svg"
-              width={600}
-              height={600}
+              src={heroImage}
+              width={900}
+              height={900}
               alt="showase imag"
               className={styles.image}
             />
