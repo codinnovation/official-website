@@ -15,12 +15,20 @@ function Service() {
   const [open, setOpen] = useState(false);
   const containerHeaderRef = useRef(null)
 
-  const { setHeroHeader, heroHeader, heroDescription, setHeroDescription } =
-  useContext(HeroContext);
+  const {
+    setHeroHeader,
+    heroHeader,
+    heroDescription,
+    setHeroDescription,
+    heroImage,
+    setHeroImage,
+  } = useContext(HeroContext);
 
   useEffect(() => {
     setHeroHeader("Our Services");
   }, [setHeroHeader, heroHeader]);
+
+
 
   useEffect(() => {
     setHeroDescription(

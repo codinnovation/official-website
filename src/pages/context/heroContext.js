@@ -19,3 +19,5 @@ export const HeroProvider = ({ children }) => {
     </HeroContext.Provider>
   );
 };
+
+export default HeroProvider;

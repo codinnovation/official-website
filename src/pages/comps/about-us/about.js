@@ -26,7 +26,7 @@ function About() {
   } = useContext(HeroContext);
 
   useEffect(() => {
-    setHeroImage("/ig.png");
+    setHeroImage("/img1 (3).png");
   }, [heroImage, setHeroImage]);
 
   useEffect(() => {
