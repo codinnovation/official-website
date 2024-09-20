@@ -1,14 +1,15 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
-import Comps from "./comps";
 import SupportIcon from "@mui/icons-material/SupportAgent";
 import styles from "../styles/Home.module.css";
-import CloseIcon from "@mui/icons-material/Close";
-import Image from "next/image";
-import CodInnovationLogo from "../../public/logo-w-1.png";
-import EventImage from "../../public/event.png";
-import WelcomePage from "../pages/welcome-page";
-import PromoImage from "../../public/grow your business with COD innovations.jpg";
+import FirstHeader from './first-header'
+import NavigationBar from './navigation-bar';
+import Showcase from "./showcase";
+import AfterShowcase from '../pages/after-showcase';
+import About from '../pages/about-us';
+import Service from '../pages/service';
+import Feedback from '../pages/feedback';
+import Footer from '../pages/footer'
 
 export default function Home() {
   const [isSupportOpen, setIsSupportOpen] = useState(false);
@@ -30,15 +31,6 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-  const followLink = () => {
-    const url = "https://edu.codinnovations.tech/";
-    window.open(url, "_blank");
-  };
-
-  const followLinkToEvent = () => {
-    const url = "/grow-your-business";
-    window.open(url, "_blank");
-  };
 
   return (
     <>
@@ -49,7 +41,14 @@ export default function Home() {
         <link rel="icon" href="/logo-w-2.png" />
       </Head>
       <div>
-        <Comps />
+        <FirstHeader />
+        <NavigationBar />
+        <Showcase />
+        <AfterShowcase />
+        <About />
+        <Service />
+        <Feedback />
+        <Footer />
         <div
           className={styles.supportContainer}
           onClick={() => setIsSupportOpen(true)}
@@ -57,29 +56,6 @@ export default function Home() {
           <SupportIcon className={styles.icon} />
         </div>
       </div>
-
-      {isSupportOpen && (
-        <>
-          <div className={styles.containerContent}>
-            <div
-              className={styles.closeIcon}
-              onClick={() => setIsSupportOpen(false)}
-            >
-              <CloseIcon className={styles.icon} />
-            </div>
-            <div className={styles.containerHeader}>
-              <Image
-                src={PromoImage}
-                alt="event-image"
-                className={styles.image}
-                width={900}
-                height={900}
-              />
-              <button onClick={followLinkToEvent}>Let&apos;s Talk!</button>
-            </div>
-          </div>
-        </>
-      )}
     </>
   );
 }

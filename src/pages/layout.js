@@ -1,14 +1,14 @@
 import React from "react";
-import FirstHeader from "../pages/comps/top-nav";
-import Nav from "../pages/comps/nav";
-import Showcase from "../pages/comps/showcase";
-import Footer from '../pages/comps/footer'
+import FirstHeader from "../pages/first-header";
+import Navigation from '../pages/navigation-bar'
+import Showcase from "../pages/showcase";
+import Footer from '../pages/footer'
 
 function Layout({ children }) {
   return (
     <div>
       <FirstHeader />
-      <Nav />
+      <Navigation />
       <Showcase />
       {children}
       <Footer />

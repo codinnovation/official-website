@@ -1,178 +1,165 @@
 .afterShowcaseContainer {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin: -3% auto;
-   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: -5% auto;
+  position: relative;
 }
 
 .afterShowcaseItemsContainer {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 60px;
-   width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  width: 70%;
 }
 
 .afterShowcaseItem {
-   width: 100%;
-   height: 100%;
-   background-color: #008374;
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   padding: 10%;
-   transition: 0.1s ease-in-out;
+  width: 100%;
+  height: 26vh;
+  background-color: #008374;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10%;
 }
 
 .afterShowcaseItem:hover {
-   background-color: #028f7e;
+  background-color: #028f7e;
 }
 
 .afterShowcaseItemIconContainer {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .afterShowcaseItemIconContainer .icon {
-   font-size: 100px;
-   color: rgb(136, 180, 224);
+  font-size: 5em;
+  color: #ff3d1d;
 }
 
 .afterShowcaseItemTextContainer {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
 }
 
 .afterShowcaseItemTextContainer h1 {
-   font-size: 14px;
-   font-family: sans-serif;
-   color: #e6e6e6;
-   font-size: 20px;
-   font-weight: 500;
+  font-size: 1.3em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  font-weight: 500;
 }
 
 @media (max-width: 700px) {
-   .afterShowcaseContainer {
-      width: 90%;
-   }
+  .afterShowcaseContainer {
+    width: 90%;
+  }
 
-   .afterShowcaseItemsContainer {
-      grid-template-columns: auto;
-      gap: 15px;
-      width: 95%;
-   }
+  .afterShowcaseItemsContainer {
+    grid-template-columns: auto;
+    gap: 15px;
+    width: 95%;
+  }
 
-   .afterShowcaseItem {
-      padding: auto;
-   }
+  .afterShowcaseItem {
+    padding: auto;
+  }
 
-   .afterShowcaseItemTextContainer h1 {
-      font-size: 20px;
-      text-align: center;
-   }
+  .afterShowcaseItemTextContainer h1 {
+    font-size: 20px;
+    text-align: center;
+  }
 }
-
-
-
-
-
-
-
 
 /*Laptops/desktops 1024 -1440 x 600 - 1024*/
 @media (min-width: 1024px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 1024px) {
+  .afterShowcaseItemsContainer {
+    width: 95%;
+  }
 
-   .afterShowcaseItemsContainer {
-      width: 95%;
-   }
-
-   .afterShowcaseItemTextContainer h1 {
-      text-align: center;
-      font-size: 1em;
-   }
+  .afterShowcaseItemTextContainer h1 {
+    text-align: center;
+    font-size: 1em;
+  }
 }
 
 /*Laptops/desktops 1536 - 1600 x 864 - 900*/
 @media (min-width: 1536px) and (max-width: 1600px) and (min-height: 864px) and (max-height: 900px) {
-   .afterShowcaseItemsContainer {
-      width: 95%;
-   }
+  .afterShowcaseItemsContainer {
+    width: 95%;
+  }
 
-   .afterShowcaseItemTextContainer h1 {
-      text-align: center;
-      font-size: 1.3em;
-   }
+  .afterShowcaseItemTextContainer h1 {
+    text-align: center;
+    font-size: 1.3em;
+  }
 }
-
 
 /*Laptops/desktops 1680 -1920 x 1050 - 1200*/
 @media (min-width: 1680px) and (max-width: 1920px) and (min-height: 1050px) and (max-height: 1200px) {
-   .afterShowcaseContainer {
-      margin: -4% auto;
-   }
+  .afterShowcaseContainer {
+    margin: -4% auto;
+  }
 
-   .afterShowcaseItemsContainer {
-      width: 95%;
-   }
+  .afterShowcaseItemsContainer {
+    width: 95%;
+  }
 
-   .afterShowcaseItemTextContainer h1 {
-      text-align: center;
-      font-size: 1em;
-   }
+  .afterShowcaseItemTextContainer h1 {
+    text-align: center;
+    font-size: 1em;
+  }
 }
-
 
 /*Laptops/desktops 2560 -3840 x 1440 - 2160*/
 @media (min-width: 2560px) and (max-width: 3840px) and (min-height: 1440px) and (max-height: 2160px) {
-   .afterShowcaseContainer {
-      margin: -2% auto;
-   }
+  .afterShowcaseContainer {
+    margin: -2% auto;
+  }
 
-   .afterShowcaseItemsContainer {
-      width: 95%;
-   }
+  .afterShowcaseItemsContainer {
+    width: 95%;
+  }
 
-   .afterShowcaseItemTextContainer h1 {
-      text-align: center;
-      font-size: 1.5em;
-   }
+  .afterShowcaseItemTextContainer h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
 }
 
 /*Laptops/desktops 4096 -5120 x 2304 - 2880*/
 @media (min-width: 4096px) and (max-width: 5120px) and (min-height: 2304px) and (max-height: 2880px) {
-   .afterShowcaseContainer {
-      margin: -1% auto;
-   }
+  .afterShowcaseContainer {
+    margin: -1% auto;
+  }
 
-   .afterShowcaseItemsContainer {
-      width: 95%;
-   }
+  .afterShowcaseItemsContainer {
+    width: 95%;
+  }
 
-   .afterShowcaseItemTextContainer h1 {
-      text-align: center;
-      font-size: 1.5em;
-   }
+  .afterShowcaseItemTextContainer h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
 }
-
 
 /*Tablets 768 - 1024 x 1024 - 1366*/
 @media (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1366px) {
-   .afterShowcaseItemsContainer {
-      width: 95%;
-   }
+  .afterShowcaseItemsContainer {
+    width: 95%;
+  }
 
-   .afterShowcaseItemTextContainer h1 {
-      text-align: center;
-      font-size: 1.2em;
-   }
+  .afterShowcaseItemTextContainer h1 {
+    text-align: center;
+    font-size: 1.2em;
+  }
 
-   .afterShowcaseContainer {
-      margin: -7% auto;
-   }
+  .afterShowcaseContainer {
+    margin: -7% auto;
+  }
 }
