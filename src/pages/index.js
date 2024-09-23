@@ -10,6 +10,7 @@ import About from '../pages/about-us';
 import Service from '../pages/service';
 import Feedback from '../pages/feedback';
 import Footer from '../pages/footer'
+import Topbar from "./top-bar";
 
 export default function Home() {
   const [isSupportOpen, setIsSupportOpen] = useState(false);
@@ -38,10 +39,10 @@ export default function Home() {
         <title>Welcome To Cod - Innovations</title>
         <meta name="description" content="Welcome to COD Innovations" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo-w-2.png" />
+        <link rel="icon" href="/logo-w-1 (1).png" />
       </Head>
       <div>
-        <FirstHeader />
+        <Topbar />
         <NavigationBar />
         <Showcase />
         <AfterShowcase />

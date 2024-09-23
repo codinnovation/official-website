@@ -14,6 +14,7 @@ function Index() {
   const [open, setOpen] = useState(false);
   const containerHeaderRef = useRef(null);
 
+
   const handleOpen = () => {
     setOpen(true);
   };
@@ -23,7 +24,7 @@ function Index() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    setTimeout(() => { 
       handleOpen();
     }, 100);
 

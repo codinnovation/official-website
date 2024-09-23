@@ -1,0 +1,116 @@
+  .topbarContainer {
+    background-color: var(--top-bar-bg-dark);
+    height: 5vh;
+    width: 100%;
+  }
+
+  .topbarContent {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contactInformationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactInformationContainer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5em;
+  }
+
+  .contactInformationContainer .contact .icon {
+    color: #fff;
+    font-size: 1.3em;
+    margin-right: 0.5em;
+  }
+
+  .contactInformationContainer .contact p {
+    font-weight: 100;
+    color: #e3e5e5;
+    font-family: var(--tagline-text-font-family);
+    font-size: 1em;
+  }
+
+  .socialmediaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socialmediaContainer .icon {
+    color: #f2f9f9;
+    margin-left: 1.2em;
+  }
+
+/*======Desktops and Laptops (1024 x 600)========*/
+
+@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 768px) {
+  .topbarContainer {
+    height: 7vh;
+  }
+
+  .topbarContent {
+    width: 83%;
+  }
+
+  .contactInformationContainer .contact {
+    margin-right: 3em;
+  }
+
+  .contactInformationContainer .contact .icon {
+    font-size: 1.1em;
+    margin-right: 0.3em;
+  }
+
+  .contactInformationContainer .contact p {
+    font-size: 0.85em;
+  }
+
+  .socialmediaContainer .icon {
+    margin-left: 1em;
+    font-size: 1em;
+  }
+}
+
+/*=======Smartphones (375)==========*/
+@media (min-width: 375px) and (max-width: 767px) {
+  .topbarContainer {
+    background-color: var(--top-bar-bg-dark);
+    height: 6vh;
+  }
+
+  .topbarContent {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+	padding: 0px;
+  }
+
+  .contactInformationContainer {
+    display: none;
+  }
+
+  .socialmediaContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .socialmediaContainer .icon {
+    color: #f2f9f9;
+    margin-left: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}

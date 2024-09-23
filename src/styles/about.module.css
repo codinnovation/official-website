@@ -1,227 +1,141 @@
 .aboutContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15%;
+  background-color: #fff;
 }
 
 .aboutContent {
-  display: grid;
   width: 70%;
+  margin: 10em auto;
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
 }
 
-.aboutTextContainer {
+.aboutImage {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
 }
 
-.aboutTextHeader {
-  width: 100%;
+.aboutImage img {
+  width: 50%;
+  height: auto;
+}
+
+.aboutDescription {
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutDescription .aboutHeader {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.aboutTextHeader h1 {
-  text-transform: uppercase;
+.aboutDescription .aboutHeader h1 {
+  margin-right: 7px;
   font-family: sans-serif;
-  font-size: 1.5em;
-  margin-right: 5.5px;
+  text-transform: uppercase;
+  font-size: 1.6em;
 }
 
-.aboutTextHeader h1:nth-child(2) {
-  border-bottom: 2px solid #ff3d1d;
+.aboutDescription .aboutHeader h1:nth-child(1) {
+  border-bottom: 3px solid #ff3d1d;
 }
 
-.aboutTextContent {
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.aboutDescription .aboutTagline {
+  margin-top: 15px;
 }
 
-.aboutTextContent p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1em;
+.aboutDescription .aboutTagline p {
+  font-family: var(--tagline-text-font-family);
 }
 
-.aboutContainerButton {
-  margin-top: 10%;
+.aboutButton {
+  margin-top: 4.5em;
 }
 
-.aboutContainerButton button {
+.aboutButton button {
+  background-color: #ff3d1d;
+  color: #e3e5e5;
   width: 150px;
   height: 60px;
-  text-transform: uppercase;
-  background-color: #ff3d1d;
-  color: #fff;
   border: none;
   border-radius: 5px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--tagline-text-font-family);
+  font-size: 1em;
+  cursor: pointer;
 }
 
-.aboutImageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/*======Desktops and Laptops (1024 x 600 - 768)========*/
 
-.aboutImageContainer img {
-  width: 55%;
-  height: auto;
-}
-
-
-@media (max-width: 700px) {
-  .aboutContainer {
-    margin-top: 25%;
-  }
-
+@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 768px) {
   .aboutContent {
-    grid-template-columns: auto;
-    width: 90%;
+    width: 83%;
+    margin: 9em auto;
   }
 
-  .aboutTextHeader h1 {
+  .aboutImage img {
+    width: 60%;
+  }
+
+  .aboutDescription .aboutHeader h1 {
+    margin-right: 5px;
     font-size: 1em;
   }
 
-  .aboutContainerButton {
-    margin-top: 10%;
+  .aboutDescription .aboutTagline {
+    margin-top: 10px;
   }
 
-  .aboutImageContainer {
-    margin-top: 5%;
-    height: 100%;
-    width: 100%;
+  .aboutDescription .aboutTagline p {
+    font-size: 0.9em;
   }
 
-  .aboutImageContainer img {
-    width: 100%;
-    height: auto;
-    padding: 25px;
-  }
-}
-
-/*Laptops/desktops 1024 -1440 x 600 - 1024*/
-@media (min-width: 1024px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 1024px) {
-  .aboutItemsContainer {
-    width: 95%;
-  }
-
-  .aboutLeftItemsHeader h1 {
-    font-size: 1.4em;
-  }
-
-  .aboutLeftItemsText p {
-    font-size: 1em;
-  }
-}
-
-/*Laptops/desktops 1536 - 1600 x 864 - 900*/
-@media (min-width: 1536px) and (max-width: 1600px) and (min-height: 864px) and (max-height: 900px) {
-  .aboutItemsContainer {
-    width: 95%;
-  }
-
-  .aboutLeftItemsHeader h1 {
-    font-size: 1.4em;
-  }
-
-  .aboutLeftItemsText p {
-    font-size: 1.2em;
-  }
-  .aboutLeftItemsButton button {
-    width: 220px;
-    height: 60px;
-    font-size: 1em;
-  }
-}
-
-/*Laptops/desktops 1680 -1920 x 1050 - 1200*/
-@media (min-width: 1680px) and (max-width: 1920px) and (min-height: 1050px) and (max-height: 1200px) {
-  .aboutItemsContainer {
-    width: 95%;
-  }
-
-  .aboutLeftItemsHeader h1 {
-    font-size: 1.6em;
-  }
-
-  .aboutLeftItemsText p {
-    font-size: 1.2em;
-  }
-
-  .aboutLeftItemsButton button {
-    width: 220px;
+  .aboutButton button {
+    width: 140px;
     height: 50px;
+    font-size: 0.9em;
+  }
+}
+
+/*=======Smartphones (375)==========*/
+@media (min-width: 375px) and (max-width: 767px) {
+  .aboutContent {
+    width: 90%;
+    margin: 4.5em auto;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  .aboutImage img {
+    width: 60%;
+  }
+
+  .aboutDescription .aboutHeader h1 {
+    margin-right: 4px;
     font-size: 1em;
   }
-}
 
-/*Laptops/desktops 2560 -3840 x 1440 - 2160*/
-@media (min-width: 2560px) and (max-width: 3840px) and (min-height: 1440px) and (max-height: 2160px) {
-  .aboutItemsContainer {
-    width: 95%;
+  .aboutDescription .aboutTagline {
+    margin-top: 10px;
+  }
+  
+  .aboutDescription .aboutTagline p {
+    font-size: 0.9em;
+    font-weight: 100;
   }
 
-  .aboutLeftItemsHeader h1 {
-    font-size: 2em;
+  .aboutButton {
+    margin-top: 3em;
   }
-
-  .aboutLeftItemsText p {
-    font-size: 1.5em;
+  
+  .aboutButton button {
+    width: 140px;
+    height: 50px;
+    font-size: 0.9em;
   }
-
-  .aboutLeftItemsButton button {
-    width: 270px;
-    height: 70px;
-    font-size: 1.2em;
-  }
-}
-
-/*Laptops/desktops 4096 -5120 x 2304 - 2880*/
-@media (min-width: 4096px) and (max-width: 5120px) and (min-height: 2304px) and (max-height: 2880px) {
-  .aboutItemsContainer {
-    width: 95%;
-  }
-
-  .aboutLeftItemsHeader h1 {
-    font-size: 2.5em;
-  }
-
-  .aboutLeftItemsText p {
-    font-size: 1.8em;
-  }
-
-  .aboutLeftItemsButton button {
-    width: 300px;
-    height: 80px;
-    font-size: 1.3em;
-  }
-}
-
-/*Tablets 768 - 1024 x 1024 - 1366*/
-@media (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1366px) {
-  .aboutItemsContainer {
-    width: 95%;
-  }
-
-  .aboutLeftItemsHeader h1 {
-    font-size: 1.6em;
-  }
-
-  .aboutLeftItemsText p {
-    font-size: 1.1em;
-  }
-
-  .aboutLeftItemsButton button {
-    width: 250px;
-    height: 70px;
-    font-size: 1.1em;
-  }
+  
 }
