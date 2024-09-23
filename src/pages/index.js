@@ -2,7 +2,6 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import SupportIcon from "@mui/icons-material/SupportAgent";
 import styles from "../styles/Home.module.css";
-import FirstHeader from './first-header'
 import NavigationBar from './navigation-bar';
 import Showcase from "./showcase";
 import AfterShowcase from '../pages/after-showcase';
@@ -11,6 +10,7 @@ import Service from '../pages/service';
 import Feedback from '../pages/feedback';
 import Footer from '../pages/footer'
 import Topbar from "./top-bar";
+import CompanyStatus from "./company-status";
 
 export default function Home() {
   const [isSupportOpen, setIsSupportOpen] = useState(false);
@@ -48,6 +48,7 @@ export default function Home() {
         <AfterShowcase />
         <About />
         <Service />
+        <CompanyStatus/>
         <Feedback />
         <Footer />
         <div

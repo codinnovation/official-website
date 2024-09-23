@@ -1,0 +1,83 @@
+.statusContainer {
+  background-color: #fff;
+}
+
+.statusContent {
+  width: 70%;
+  margin: 10em auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+}
+
+.statusImage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.statusImage img {
+  width: 100%;
+  height: auto;
+}
+
+.statContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.statContainer .stat {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.statContainer .stat .icon {
+  font-size: 4em;
+}
+
+.statContainer .stat .statText {
+  margin-left: 0.3em;
+}
+
+.statContainer .stat .statText h1 {
+  font-family: sans-serif;
+  font-size: 1.6em;
+}
+
+.statContainer .stat .statText p {
+  font-family: var(--tagline-text-font-family);
+  font-size: 1em;
+  font-weight: 100;
+}
+
+/*=======Smartphones (375)==========*/
+@media (min-width: 375px) and (max-width: 767px) {
+  .statusContent {
+    grid-template-columns: 1fr;
+    gap: 3em;
+    width: 90%;
+  }
+  .statContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  .statContainer .stat .icon {
+    font-size: 2.5em;
+  }
+
+  .statContainer .stat .statText {
+    margin-left: 0.6em;
+  }
+
+  .statContainer .stat .statText h1 {
+    font-size: 1.1em;
+  }
+
+  .statContainer .stat .statText p {
+    font-size: 0.9em;
+  }
+}
