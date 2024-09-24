@@ -36,7 +36,7 @@ function Index() {
             </div>
 
             <div className={styles.aboutTagline}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit</p>
+              <p>We are a passionate and dedicated team, firmly guided by the core principles of courage, discipline, and innovation, consistently working tirelessly to craft effective solutions that bring bold ideas to life and create lasting, meaningful change.</p>
 
             </div>
 

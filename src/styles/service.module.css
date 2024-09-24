@@ -33,7 +33,7 @@
 
 .servicebox {
   background-color: var(--top-bar);
-  height: 25vh;
+  height: 30vh;
   padding: 5px;
   width: 100%;
   display: flex;

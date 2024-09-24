@@ -25,8 +25,8 @@ function Index() {
               viewport={{ infinity: true }}
               className={styles.servicebox}>
               <MiscellaneousServicesIcon className={styles.icon} />
-              <h1>Custom Website solutions </h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim</p>
+              <h1>Custom Software Solutions </h1>
+              <p>We develop custom software solutions for businesses, individuals, and institutions. Whether you need a website, a mobile app, or a tailored application, we are here to meet your unique requirements.</p>
             </motion.div>
 
             <motion.div
@@ -36,8 +36,8 @@ function Index() {
               viewport={{ infinity: true }}
               className={styles.servicebox}>
               <MiscellaneousServicesIcon className={styles.icon} />
-              <h1>Custom Website solutions </h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim</p>
+              <h1>School-Focused Services </h1>
+              <p>Our school-focused services are designed to enhance the learning experience and streamline administrative processes. Our mission is to empower educational institutions with innovative technology solutions, such as school management systems, learning management systems, and custom websites tailored for schools.</p>
             </motion.div>
 
             <motion.div
@@ -47,8 +47,8 @@ function Index() {
               viewport={{ infinity: true }}
               className={styles.servicebox}>
               <MiscellaneousServicesIcon className={styles.icon} />
-              <h1>Custom Website solutions </h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim</p>
+              <h1>Programming Education </h1>
+              <p>Training young aspiring programmers through engaging workshops, intensive boot camps, and specialized programs. Our curriculum includes essential programming languages and hands-on projects, along with mentorship opportunities and career development resources to prepare students for successful careers in technology.</p>
             </motion.div>
           </div>
 

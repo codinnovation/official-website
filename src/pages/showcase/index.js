@@ -15,7 +15,7 @@ function Showcase() {
             </div>
 
             <div className={styles.heroDescriptionTagline}>
-              <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+              <p>At the intersection of courage, discipline, and obedience, we unlock innovative possibilities that drive industries forward, creating new opportunities for growth and transformation</p>
             </div>
 
             <div className={styles.heroDescriptionButton}>

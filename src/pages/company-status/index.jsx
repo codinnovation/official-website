@@ -38,8 +38,8 @@ function CompanyStatus() {
             >
               <MoodIcon className={styles.icon} />
               <div className={styles.statText}>
-                <h1>232</h1>
-                <p>Happy Clients we have worked for</p>
+                <h1>2</h1>
+                <p>Happy clients who trust us</p>{" "}
               </div>
             </motion.div>
 
@@ -52,8 +52,8 @@ function CompanyStatus() {
             >
               <AccountTreeIcon className={styles.icon} />
               <div className={styles.statText}>
-                <h1>53</h1>
-                <p>Project Clients we have worked for</p>
+                <h1>5</h1>
+                <p>Successful projects completed</p>{" "}
               </div>
             </motion.div>
 
@@ -67,7 +67,7 @@ function CompanyStatus() {
               <SupportAgentIcon className={styles.icon} />
               <div className={styles.statText}>
                 <h1>1390</h1>
-                <p>Supports Clients we have</p>
+                <p>Clients supported with quality services</p>{" "}
               </div>
             </motion.div>
 
@@ -80,8 +80,8 @@ function CompanyStatus() {
             >
               <PeopleIcon className={styles.icon} />
               <div className={styles.statText}>
-                <h1>20</h1>
-                <p>Hard workers Clients we have</p>
+                <h1>2</h1>
+                <p>Dedicated team members</p>{" "}
               </div>
             </motion.div>
           </div>

@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import CODLOGO from "../../../public/logo-2 (1).png";
 import styles from "../../styles/top-bar.module.css";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
@@ -8,10 +6,25 @@ import WhatsApp from "@mui/icons-material/WhatsApp";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 function Topbar() {
+  function GoToWhatsApp() {
+    let phoneNumber = "+233500976882";
+    let message = "Hello, I would like to inquire about...";
+    let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+  }
+
+  function GoToFacebook() {
+    let facebookURL =
+      "https://www.facebook.com/profile.php?id=61559909200927&sk=about";
+
+    window.open(facebookURL, "_blank");
+  }
   return (
     <>
       <motion.div
@@ -41,7 +54,7 @@ function Topbar() {
               whileTap={{ scale: 0.9 }}
             >
               <PhoneIphoneIcon className={styles.icon} />
-              <p>+233 597 063 145</p>
+              <p>+233 500 976 882</p>
             </motion.div>
           </motion.div>
 
@@ -55,6 +68,7 @@ function Topbar() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               className={styles.icon}
+              onClick={GoToWhatsApp}
             >
               <WhatsApp />
             </motion.div>
@@ -62,6 +76,7 @@ function Topbar() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               className={styles.icon}
+              onClick={GoToFacebook}
             >
               <FacebookOutlinedIcon />
             </motion.div>

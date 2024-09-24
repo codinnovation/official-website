@@ -113,14 +113,14 @@
   }
 
   .navigationContent .companyLogo h1 {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-family: sans-serif;
     color: #fff;
     margin-left: 0.2em;
   }
 
   .navigationContainer .companyLogo img {
-    width: 7%;
+    width: 15%;
     height: auto;
   }
 
@@ -133,5 +133,56 @@
 
   .menuIcon .icon {
     color: #e3e5e5;
+  }
+
+  .sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: #333;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  
+  .menuLogoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .menuLogoContainer img{
+    width: 50%;
+    height: auto;
+  }
+  
+  .menuLogoContainer h2 {
+    color: #fff;
+    margin-top: 0.2em;
+    font-family: sans-serif;
+  }
+  
+  .menuLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .menuLinks a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: var( --tagline-text-font-family);
+  }
+  
+  .menuLinks a:hover {
+    color: #ff3d1d;
   }
 }

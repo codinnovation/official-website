@@ -8,6 +8,22 @@ import Image from "next/image";
 import CODLOGO from '../../../public/logo-w-2.png'
 
 function Footer() {
+  function GoToWhatsApp() {
+    let phoneNumber = "+233500976882";
+    let message = "Hello, I would like to inquire about...";
+    let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+  }
+
+  function GoToFacebook() {
+    let facebookURL =
+      "https://www.facebook.com/profile.php?id=61559909200927&sk=about";
+
+    window.open(facebookURL, "_blank");
+  }
   return (
     <>
       <motion.div
@@ -45,8 +61,8 @@ function Footer() {
             transition={{ delay: 1.5, duration: 0.8, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.1 }}
           >
-            <FacebookIcon className={styles.icon} />
-            <WhatsAppIcon className={styles.icon} />
+            <FacebookIcon className={styles.icon} onClick={GoToFacebook} />
+            <WhatsAppIcon className={styles.icon} onClick={GoToWhatsApp} />
             <XIcon className={styles.icon} />
           </motion.div>
         </div>
