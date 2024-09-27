@@ -1,10 +1,12 @@
 import React from "react";
+import { useRouter } from "next/router";
 import styles from '../../styles/about.module.css';
 import Image from "next/image";
 import CEOImage from "../../../public/img1 (1).png";
 import { motion } from 'framer-motion'
 
 function Index() {
+  const router = useRouter()
   const scaleUpVariant = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
@@ -36,12 +38,11 @@ function Index() {
             </div>
 
             <div className={styles.aboutTagline}>
-              <p>We are a passionate and dedicated team, firmly guided by the core principles of courage, discipline, and innovation, consistently working tirelessly to craft effective solutions that bring bold ideas to life and create lasting, meaningful change.</p>
-
+              <p>COD Innovations is on a mission to revolutionize education across Africa, beginning with  our current operations in Ghana. Our core focus is developing innovative software applications tailored for educational institutions. By digitizing and streamlining traditional school management processes, we aim to boost operational efficiency and elevate the learning experience for both educators and students...</p>
             </div>
 
             <div className={styles.aboutButton}>
-              <button>Read More</button>
+              <button onClick={() => router.push('/who-are-we')}>Read More</button>
             </div>
           </motion.div>
         </div>

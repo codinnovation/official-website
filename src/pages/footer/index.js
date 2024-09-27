@@ -8,61 +8,45 @@ import Image from "next/image";
 import CODLOGO from '../../../public/logo-w-2.png'
 
 function Footer() {
-  function GoToWhatsApp() {
-    let phoneNumber = "+233500976882";
-    let message = "Hello, I would like to inquire about...";
-    let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
-
-    window.open(whatsappURL, "_blank");
-  }
-
-  function GoToFacebook() {
-    let facebookURL =
-      "https://www.facebook.com/profile.php?id=61559909200927&sk=about";
-
-    window.open(facebookURL, "_blank");
-  }
   return (
     <>
       <motion.div
         className={styles.footerContainer}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 20 }} // Hide initially
+        whileInView={{ opacity: 1, y: 0 }} // Animates when in view
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.1 }} // Triggers animation when 10% of the footer is visible
       >
         <div className={styles.footerContent}>
           <motion.div
             className={styles.companyName}
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ x: -100, opacity: 0 }} // Hide initially
+            whileInView={{ x: 0, opacity: 1 }} // Slide in when in view
             transition={{ delay: 0.5, duration: 0.8, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }} // Triggered when in view
           >
-            <Image src={CODLOGO} width={900} height={900} alt="cod-logo" />
+            <Image src={CODLOGO} width={900} height={900} alt="logo" />
           </motion.div>
 
           <motion.div
             className={styles.copyright}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }} // Hide initially
+            whileInView={{ opacity: 1 }} // Fade in when in view
             transition={{ delay: 1, duration: 0.8, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }} // Triggered when in view
           >
-            <p>© {new Date().getFullYear()} COD Innovations. All Rights Reserved</p>
+            <p>© {new Date().getFullYear()}. COD Innovations. All Rights Reserved</p>
           </motion.div>
 
           <motion.div
             className={styles.socialMedia}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.5 }} // Hide initially
+            whileInView={{ opacity: 1, scale: 1 }} // Scale in when in view
             transition={{ delay: 1.5, duration: 0.8, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }} // Triggered when in view
           >
-            <FacebookIcon className={styles.icon} onClick={GoToFacebook} />
-            <WhatsAppIcon className={styles.icon} onClick={GoToWhatsApp} />
+            <FacebookIcon className={styles.icon} />
+            <WhatsAppIcon className={styles.icon} />
             <XIcon className={styles.icon} />
           </motion.div>
         </div>

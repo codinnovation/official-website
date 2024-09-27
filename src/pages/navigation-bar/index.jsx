@@ -23,11 +23,11 @@ function Navbar() {
           </div>
 
           <div className={styles.linksContainer}>
-            <Link href="">Home</Link>
-            <Link href="">About</Link>
-            <Link href="">Services</Link>
-            <Link href="">Team</Link>
-            <Link href="">Contact</Link>
+            <Link href="/">Home</Link>
+            <Link href="/who-are-we">About</Link>
+            <Link href="/">Services</Link>
+            <Link href="/">Team</Link>
+            <Link href="/">Contact</Link>
           </div>
 
           <div className={styles.menuIcon} onClick={toggleMenu}>
@@ -53,11 +53,11 @@ function Navbar() {
             <h2>Innovations</h2>
           </div>
           <div className={styles.menuLinks}>
-            <Link href="">Home</Link>
-            <Link href="">About</Link>
-            <Link href="">Services</Link>
-            <Link href="">Team</Link>
-            <Link href="">Contact</Link>
+            <Link href="/">Home</Link>
+            <Link href="/who-are-we">About</Link>
+            <Link href="/">Services</Link>
+            <Link href="/">Team</Link>
+            <Link href="/">Contact</Link>
           </div>
         </motion.div>
       )}
