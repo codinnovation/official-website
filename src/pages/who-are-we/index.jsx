@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../../styles/who-are-we.module.css";
 import CEOImage from "../../../public/img1 (1).png";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 function WhoAreWe() {
   const scaleUpVariant = {
@@ -48,6 +49,12 @@ function WhoAreWe() {
   }, [scrollToRef]);
   return (
     <>
+      <Head>
+        <title>Who Are We | Cod - Innovations</title>
+        <meta name="description" content="COD Innovations | Who Are We" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/logo-w-1 (1).png" />
+      </Head>
       <Layout>
         <div className={styles.aboutContainer} ref={aboutHeaderRef}>
           <div className={styles.aboutContent}>
