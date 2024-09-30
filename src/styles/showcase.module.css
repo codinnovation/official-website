@@ -46,7 +46,7 @@
   border-radius: 50px;
   width: 160px;
   height: 70px;
-  color: #e3e5e5;
+  color: #fff;
   margin-right: 3em;
 }
 
@@ -54,7 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #e3e5e5;
+  color: #fff;
 }
 
 .watchVideoButton .icon {

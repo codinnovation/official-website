@@ -25,8 +25,8 @@ function Index() {
               viewport={{ infinity: true }}
               className={styles.servicebox}>
               <MiscellaneousServicesIcon className={styles.icon} />
-              <h1>Custom Software Solutions </h1>
-              <p>We develop custom software solutions for businesses, individuals, and institutions. Whether you need a website, a mobile app, or a tailored application, we are here to meet your unique requirements.</p>
+              <h1>Advanced Tech Solutions for Education </h1>
+              <p>Our cutting-edge software solutions empower schools and educational institutions to streamline administrative processes, enhance student engagement, and foster better learning outcomes through technology-driven innovation</p>
             </motion.div>
 
             <motion.div
@@ -36,8 +36,8 @@ function Index() {
               viewport={{ infinity: true }}
               className={styles.servicebox}>
               <MiscellaneousServicesIcon className={styles.icon} />
-              <h1>School-Focused Services </h1>
-              <p>Our school-focused services are designed to enhance the learning experience and streamline administrative processes. Our mission is to empower educational institutions with innovative technology solutions, such as school management systems, learning management systems, and custom websites tailored for schools.</p>
+              <h1>Building the Next Generation of Coders </h1>
+              <p>We mentor and train aspiring developers through immersive bootcamps, hands-on internships, and specialized short courses, equipping them with the skills and real-world experience needed to excel in dynamic tech careers.</p>
             </motion.div>
 
             <motion.div
@@ -47,8 +47,8 @@ function Index() {
               viewport={{ infinity: true }}
               className={styles.servicebox}>
               <MiscellaneousServicesIcon className={styles.icon} />
-              <h1>Programming Education </h1>
-              <p>Training young aspiring programmers through engaging workshops, intensive boot camps, and specialized programs. Our curriculum includes essential programming languages and hands-on projects, along with mentorship opportunities and career development resources to prepare students for successful careers in technology.</p>
+              <h1>Tailored Digital Solutions for Your Business </h1>
+              <p>We provide tailor-made websites, robust e-commerce platforms, and innovative software solutions meticulously designed to drive growth, enhance operational efficiency, and empower businesses of all sizes to thrive in a competitive marketplace</p>
             </motion.div>
           </div>
 

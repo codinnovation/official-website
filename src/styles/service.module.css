@@ -17,7 +17,7 @@
   margin-left: 7px;
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 .serviceContentHeader h1:nth-child(2) {
@@ -34,11 +34,18 @@
 .servicebox {
   background-color: var(--top-bar);
   height: 30vh;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 10px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.servicebox:hover{
+  background-color: #ff3d1d;
+  color: #e3e5e5;
 }
 
 .servicebox .icon {
@@ -51,17 +58,19 @@
 }
 
 .servicebox h1 {
-  font-size: 1.2em;
+  font-size: 0.9em;
+  text-align: center;
   font-family: sans-serif;
   text-transform: uppercase;
   margin-top: 0.8em;
-  color: #e3e5e5;
+  color: #fff;
 }
 
 .servicebox p {
   text-align: center;
-  margin-top: 0.7em;
-  color: #e3e5e5;
+  margin-top: 1em;
+  font-size: 1em;
+  color: #fff;
   font-family: var(--tagline-text-font-family);
   font-weight: 100;
 }
@@ -75,7 +84,7 @@
 
 .serviceContentButton button {
   background-color: #ff3d1d;
-  color: #e3e5e5;
+  color: #fff;
   width: 150px;
   height: 60px;
   border: none;
@@ -116,7 +125,7 @@
   }
 
   .servicebox h1 {
-    font-size: 0.95em;
+    font-size: 0.9em;
     margin-top: 0.5em;
     text-align: center;
   }
@@ -166,7 +175,7 @@
   }
 
   .servicebox h1 {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-top: 0.5em;
     color: #e3e5e5;
   }

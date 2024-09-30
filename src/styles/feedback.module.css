@@ -60,7 +60,7 @@
 .feedback p {
   font-family: var(--tagline-text-font-family);
   font-size: 1em;
-  color: #e3e5e5;
+  color: #fff;
   text-align: center;
   margin-top: 2em;
 }
