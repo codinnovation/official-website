@@ -25,9 +25,9 @@ function Navbar() {
           <div className={styles.linksContainer}>
             <Link href="/">Home</Link>
             <Link href="/who-are-we">About</Link>
-            <Link href="/">Services</Link>
+            <Link href="/our-services">Services</Link>
             <Link href="/meet-the-team">Team</Link>
-            <Link href="/">Contact</Link>
+            <Link href="/contact-us">Contact</Link>
           </div>
 
           <div className={styles.menuIcon} onClick={toggleMenu}>
@@ -55,9 +55,9 @@ function Navbar() {
           <div className={styles.menuLinks}>
             <Link href="/">Home</Link>
             <Link href="/who-are-we">About</Link>
-            <Link href="/">Services</Link>
+            <Link href="/our-services">Services</Link>
             <Link href="/meet-the-team">Team</Link>
-            <Link href="/">Contact</Link>
+            <Link href="/contact-us">Contact</Link>
           </div>
         </motion.div>
       )}

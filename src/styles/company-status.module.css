@@ -4,7 +4,7 @@
 
 .statusContent {
   width: 70%;
-  margin: 10em auto;
+  margin: 8% auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4em;
