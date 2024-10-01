@@ -3,6 +3,7 @@ import styles from '../../styles/team.module.css'
 import Layout from "@/pages/layout";
 import Image from "next/image";
 import CEOPhoto from "../../../public/img1 (1).png";
+import Team1 from '../../../public/team-1.png'
 import PhoneIcon from "@mui/icons-material/Phone";
 import Email from "@mui/icons-material/Email";
 import WhatsApp from "@mui/icons-material/WhatsApp";

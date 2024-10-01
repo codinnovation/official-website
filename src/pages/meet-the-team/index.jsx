@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Layout from "../layout";
 import styles from "../../styles/meet-the-team.module.css";
 import CEOImage from "../../../public/img1 (1).png";
+import Team1 from "../../../public/team-1.png";
 import Image from "next/image";
 import WhatsApp from "@mui/icons-material/WhatsApp";
 import FacebookOutlined from "@mui/icons-material/FacebookOutlined";
@@ -86,27 +87,22 @@ function MeetTheTeam() {
             </div>
             <div className={styles.memberContainer}>
               <div className={styles.memberPhoto}>
-                <Image
-                  src={CEOImage}
-                  width={900}
-                  height={900}
-                  alt="ceo-image"
-                />
+                <Image src={Team1} width={900} height={900} alt="ceo-image" />
               </div>
 
               <div className={styles.memberName}>
-                <h1>Kwabena Asumadu</h1>
+                <h1>Kofi Adom</h1>
               </div>
 
               <div className={styles.memberPosition}>
-                <p>CEO & Founder, Software Developer</p>
+                <p> Software Developer</p>
               </div>
               <div className={styles.memberSocial}>
                 <WhatsApp className={styles.icon} />
                 <FacebookOutlined className={styles.icon} />
                 <X className={styles.icon} />
               </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </Layout>

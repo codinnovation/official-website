@@ -22,11 +22,11 @@
   margin-top: 4%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5%;
+  gap: 10%;
 }
 
 .memberContainer {
-  background-color: #f8f8f8;
+  background-color: #fafafa;
   height: auto;
   padding: 10px;
   border-radius: 20px;
@@ -39,7 +39,7 @@
 }
 
 .memberPhoto img {
-  width: 40%;
+  width: 50%;
   height: auto;
 }
 
