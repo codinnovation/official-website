@@ -27,6 +27,7 @@ function Navbar() {
             <Link href="/who-are-we">About</Link>
             <Link href="/our-services">Services</Link>
             <Link href="/meet-the-team">Team</Link>
+            <Link href="/">Our Projects</Link>
             <Link href="/contact-us">Contact</Link>
           </div>
 
@@ -57,6 +58,7 @@ function Navbar() {
             <Link href="/who-are-we">About</Link>
             <Link href="/our-services">Services</Link>
             <Link href="/meet-the-team">Team</Link>
+            <Link href="/">Our Projects</Link>
             <Link href="/contact-us">Contact</Link>
           </div>
         </motion.div>

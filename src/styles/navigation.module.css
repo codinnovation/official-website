@@ -2,6 +2,7 @@
     background-color: var(--top-bar);
     height: auto;
     width: 100%;
+    height: 10vh;
     position: sticky;
     top: 0;
     z-index: 900;
@@ -39,6 +40,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
   }
 
   .linksContainer a {

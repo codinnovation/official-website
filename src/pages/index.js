@@ -11,6 +11,7 @@ import Service from '../pages/service';
 import Feedback from '../pages/feedback';
 import Footer from '../pages/footer'
 import Topbar from "./top-bar";
+import Gratitude from "./gratitude-from-learner";
 import CompanyStatus from "./company-status";
 import Tooltip from '@mui/material/Tooltip';
 import Button from '@mui/material/Button';
@@ -56,6 +57,7 @@ export default function Home() {
         <Service />
         <CompanyStatus />
         <Feedback />
+        <Gratitude/>
         <Footer />
         <div
           className={styles.supportContainer}
