@@ -16,13 +16,13 @@ function Gratitude() {
 
         <div className={styles.gratitudeContent}>
           <div className={styles.gratitudeVideo}>
-            <Player src="/codvideo.webm">
+            <Player src="/">
               <ControlBar autoHide={true} />
             </Player>
           </div>
 
 		  <div className={styles.gratitudeVideo}>
-            <Player src="/codvideo.webm">
+            <Player src="/">
               <ControlBar autoHide={true} />
             </Player>
           </div>
