@@ -9,7 +9,6 @@
   align-items: center;
 }
 
-
 .icon {
   font-size: 45px;
   color: #f85a40;
@@ -67,7 +66,67 @@
   height: auto;
 }
 
-@media (max-width:700px) {
+.contactHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.contactHeader h1{
+  font-size: 1em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.textContainer h1 {
+  font-size: 0.95em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.textContainer p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.socialContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.socialContainer button{
+  width: 100%;
+  height: 60px;
+  border: none;
+  padding: 10px;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.socialContainer button:nth-child(1){
+  background-color: #f85a40;
+  color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.socialContainer button:nth-child(3){
+  background-color: #008374;
+  color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 700px) {
   .supportContainer {
     top: 94%;
   }
@@ -87,6 +146,15 @@
   .containerHeader .image {
     width: 100%;
     height: auto;
+  }
+
+  .socialContainer button{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 0.7em;
+    font-weight: 800;
+    border-radius: 8px;
   }
 }
 

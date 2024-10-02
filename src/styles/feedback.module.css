@@ -31,7 +31,7 @@
 
 .feedback {
   background-color: #ff3d1d;
-  height: 35vh;
+  height: auto;
   padding: 2em;
   border-radius: 10px;
 }
@@ -40,18 +40,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  background-color: #e3e5e5;
 }
 
 .feedback .feedbackImage img {
-  width: 25%;
+  width: 100%;
   height: auto;
   border-radius: 50%;
+  padding: 10px;
 }
 
 .feedback h1 {
   font-size: 1.1em;
   text-align: center;
-  margin-top: 0.6em;
+  margin-top: 10%;
   text-transform: uppercase;
   color: #fff;
   font-family: sans-serif;
@@ -151,7 +154,7 @@
 /*=======Smartphones (375)==========*/
 @media (min-width: 375px) and (max-width: 767px) {
   .feedbackContainer {
-    margin-top: 0em;
+    margin-top: 25%;
   }
 
   .feedbackContainerHeader h1 {
@@ -168,7 +171,7 @@
 
   .feedback {
     background-color: #ff3d1d;
-    height: 35vh;
+    height: auto;
     padding: 2em;
     border-radius: 5px;
   }

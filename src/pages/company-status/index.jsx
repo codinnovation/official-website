@@ -46,7 +46,7 @@ function CompanyStatus() {
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.05 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
               viewport={{ infinity: true }}
               className={styles.stat}
             >
@@ -60,7 +60,7 @@ function CompanyStatus() {
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.2 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
               viewport={{ infinity: true }}
               className={styles.stat}
             >
@@ -74,7 +74,7 @@ function CompanyStatus() {
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.5 }}
+              transition={{ duration: 0.5, delay: 1 }}
               viewport={{ infinity: true }}
               className={styles.stat}
             >

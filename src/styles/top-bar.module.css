@@ -270,7 +270,7 @@
 @media (min-width: 375px) and (max-width: 767px) {
   .topbarContainer {
     background-color: var(--top-bar-bg-dark);
-    height: 6vh;
+    height: 7vh;
   }
 
   .topbarContent {
