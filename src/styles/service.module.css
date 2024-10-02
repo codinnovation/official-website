@@ -115,7 +115,7 @@
 
   .servicebox {
     background-color: var(--top-bar);
-    height: 35vh;
+    height: auto;
     padding: 5px;
   }
 
