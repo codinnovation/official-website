@@ -94,6 +94,7 @@
   cursor: pointer;
 }
 
+
 /*======Desktops and Laptops (1024 x 600 -768)========*/
 
 @media (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 768px) {
@@ -114,14 +115,13 @@
 
   .feedback {
     background-color: #ff3d1d;
-    height: 45vh;
+    height: auto;
     padding: 1.5em;
   }
-
+  
   .feedback .feedbackImage img {
-    width: 35%;
+    width: 100%;
   }
-
   .feedback h1 {
     font-size: 0.8em;
     text-align: center;
