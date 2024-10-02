@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../../styles/showcase.module.css'
-import HeroImage from '../../../public/hero-img.svg'
+import styles from '../../../styles/showcase.module.css'
+import HeroImage from '../../../../public/hero-img.svg'
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import Image from 'next/image';
 

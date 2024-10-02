@@ -1,11 +1,11 @@
 import React from "react";
-import styles from '../../styles/footer.module.css';
+import styles from '../../../styles/footer.module.css';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import XIcon from '@mui/icons-material/X';
 import { motion } from "framer-motion";
 import Image from "next/image";
-import CODLOGO from '../../../public/logo-w-2.png'
+import CODLOGO from '../../../../public/logo-w-2.png'
 
 function Footer() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "../../styles/navigation.module.css";
-import CODLOGO from "../../../public/logo-2 (1).png";
+import styles from "../../../styles/navigation.module.css";
+import CODLOGO from "../../../../public/logo-2 (1).png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
