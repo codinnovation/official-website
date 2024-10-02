@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import styles from "../../styles/feedback.module.css";
-import CustomerImage from "../../../public/img1 (3).png";
-import HarrietImage from "../../../public/harriet (1).png";
+import styles from "../../../styles/feedback.module.css";
+import CustomerImage from "../../../../public/img1 (3).png";
+import HarrietImage from "../../../../public/harriet (1).png";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Image from "next/image";

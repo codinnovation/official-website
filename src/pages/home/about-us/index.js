@@ -1,8 +1,8 @@
 import React from "react";
 import { useRouter } from "next/router";
-import styles from '../../styles/about.module.css';
+import styles from '../../../styles/about.module.css';
 import Image from "next/image";
-import CEOImage from "../../../public/img1 (1).png";
+import CEOImage from "../../../../public/img1 (1).png";
 import { motion } from 'framer-motion'
 
 function Index() {

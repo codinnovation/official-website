@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../../styles/after-showcase.module.css';
+import styles from '../../../styles/after-showcase.module.css';
 import ShieldOutlinedIcon from "@mui/icons-material/ShieldOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import Brightness4OutlinedIcon from "@mui/icons-material/Brightness4Outlined";

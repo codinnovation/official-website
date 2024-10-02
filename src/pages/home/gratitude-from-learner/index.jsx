@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/gratitude.module.css";
+import styles from "../../../styles/gratitude.module.css";
 import { Player, ControlBar } from "video-react";
 import "video-react/dist/video-react.css";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
