@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { getAuth, signOut } from "firebase/auth";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -16,6 +17,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const auth = getAuth(app);
+const storage = getStorage(app)
 
 const signOutUser = async (auth) => {
   try {
@@ -25,4 +27,4 @@ const signOutUser = async (auth) => {
   }
 };
 
-export { db, app, auth, signOutUser };
+export { db, app, auth, signOutUser, storage };

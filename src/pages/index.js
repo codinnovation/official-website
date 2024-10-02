@@ -1,25 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
-import { useState, useEffect } from "react";
 import SupportIcon from "@mui/icons-material/SupportAgent";
 import styles from "../styles/Home.module.css";
-import NavigationBar from './navigation-bar';
-import Showcase from "./showcase";
-import AfterShowcase from '../pages/after-showcase';
-import About from '../pages/about-us';
-import Service from '../pages/service';
-import Feedback from '../pages/feedback';
-import Footer from '../pages/footer'
-import Topbar from "./top-bar";
-import Gratitude from "./gratitude-from-learner";
-import CompanyStatus from "./company-status";
+import HomePage from "./home";
 import Tooltip from '@mui/material/Tooltip';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -27,8 +16,12 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 export default function Home() {
+  const router = useRouter();
   const [isSupportOpen, setIsSupportOpen] = useState(false);
-  const [showFirstContent, setShowFirstContent] = useState(true);
+  const [isJoinSocialOpen, setIsJoinSocialOpen] = useState(false);
+
+
+  
 
   const handleOpenSupport = () => {
     setIsSupportOpen(true)
@@ -39,6 +32,38 @@ export default function Home() {
   }
 
 
+  const handleOpenSocial = () => {
+    setIsJoinSocialOpen(true);
+  }
+
+  const handleCloseSocial = () => {
+    setIsJoinSocialOpen(false)
+  }
+
+  function handleOpenWhatsAppGroup() {
+    localStorage.setItem('hasJoinedSocial', 'true');
+  }
+
+  function GoToFacebook() {
+    localStorage.setItem('hasJoinedSocial', true);
+    let facebookURL =
+      "https://www.facebook.com/profile.php?id=61559909200927&sk=about";
+
+    window.open(facebookURL, "_blank");
+  }
+
+  useEffect(() => {
+    const hasJoinedSocial = localStorage.getItem('hasJoinedSocial');
+    if (!hasJoinedSocial) {
+
+      const timer = setTimeout(() => {
+        handleOpenSocial()
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+
+  }, []);
 
   return (
     <>
@@ -49,16 +74,7 @@ export default function Home() {
         <link rel="icon" href="/logo-w-1 (1).png" />
       </Head>
       <div>
-        <Topbar />
-        <NavigationBar />
-        <Showcase />
-        <AfterShowcase />
-        <About />
-        <Service />
-        <CompanyStatus />
-        <Feedback />
-        <Gratitude/>
-        <Footer />
+        <HomePage />
         <div
           className={styles.supportContainer}
           onClick={handleOpenSupport}
@@ -76,20 +92,49 @@ export default function Home() {
         onClose={handleCloseOpenSupport}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Contact Us"}</DialogTitle>
+        <div className={styles.contactHeader}>
+          <h1>Need Help? Contact Us</h1>
+        </div>
         <DialogContent>
-          <DialogContentText id="alert-dialog-slide-description">
-            Call Us: +233 597 063 145
-          </DialogContentText>
-          <DialogContentText id="alert-dialog-slide-description">
-            WhatsApp Us: +233 500 976 882
-          </DialogContentText>
-          <DialogContentText id="alert-dialog-slide-description">
-            Email Us: codinnovations001@gmail.com
-          </DialogContentText>
+          <div className={styles.textContainer}>
+            <h1>Email Us</h1>
+            <p>codinnovations001@gmail.com</p>
+          </div>
+
+          <div className={styles.textContainer}>
+            <h1>Call Us</h1>
+            <p>+233 597 063 145</p>
+          </div>
+
+          <div className={styles.textContainer}>
+            <h1>WhatsApp Us</h1>
+            <p>+233 500 976 882</p>
+          </div>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleCloseOpenSupport}>Close</Button>
+        </DialogActions>
+      </Dialog>
+
+      <Dialog
+        open={isJoinSocialOpen}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleCloseSocial}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <div className={styles.contactHeader}>
+          <h1>Join Our Community</h1>
+        </div>
+        <DialogContent>
+          <div className={styles.socialContainer}>
+            <button> WhatsApp Group</button>
+            <button> WhatsApp Channel</button> 
+            <button onClick={GoToFacebook}> Facebook Page</button>
+          </div>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseSocial}>Close</Button>
         </DialogActions>
       </Dialog>
     </>
