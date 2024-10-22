@@ -5,7 +5,6 @@ import HeroImage from "../../../../public/hero-img.svg";
 import { Motion, spring } from "react-motion";
 
 function HeroSection() {
-  // State to track when the page is visible
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -54,7 +53,6 @@ function HeroSection() {
           )}
         </Motion>
 
-        {/* Motion for Hero Image */}
         <Motion
           defaultStyle={{ x: 200, opacity: 0 }}
           style={{
