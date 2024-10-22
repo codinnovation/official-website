@@ -8,6 +8,7 @@ import { Motion, spring } from "react-motion";
 
 function TopBar() {
   const [isVisible, setIsVisible] = useState(false);
+  //update
 
   useEffect(() => {
     setIsVisible(true);
