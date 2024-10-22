@@ -1,0 +1,90 @@
+.glanceContainer {
+  width: 100%;
+  height: 35vh;
+  background: linear-gradient(to left, #f85940, #ffff);
+}
+
+.glanceContent {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 7%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionHeader h1 {
+  font-size: 3.5em;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: 800;
+}
+
+.section hr {
+  width: 100px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  margin-top: 10px;
+}
+
+.sectionDescription {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionDescription p {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.9em;
+  font-weight: 600;
+}
+
+
+@media (max-width:600px){
+	.glanceContainer{
+		height: auto;
+	}
+
+	.glanceContent{
+		grid-template-columns: 1fr;
+		width: 90%;
+		margin-top: 15%;
+		gap: 50px;
+		padding: 20px;
+	}
+
+	.sectionHeader h1 {
+		font-size: 2em;
+	  }
+	  
+	  .section hr {
+		width: 60px;
+		margin-top: 9px;
+	  }
+
+	  .sectionDescription {
+		margin-top: 9px;
+	
+	  }
+	  
+	  .sectionDescription p {
+		font-size: 1.1em;
+	  }
+}
