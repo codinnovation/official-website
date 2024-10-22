@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
+import HomePage from "./home page";
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/logo-w-1 (1).png" />
       </Head>
       <div>
+        <HomePage />
       </div>
     </>
   );

@@ -1,0 +1,135 @@
+.topbarContainer {
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+  top: 0;
+  position: sticky;
+  z-index: 900;
+}
+
+.topbarContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.companyContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.companyContainer img {
+  width: 10%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.companyName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.companyName h1 {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.companyName p {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #6a6a6a;
+}
+
+.navigationContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkContainer a {
+  font-size: 1.1em;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navigationButton {
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationButton button {
+  width: 125px;
+  height: 50px;
+  background: linear-gradient(to right, #008374, #f85a40);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-family: sans-serif;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.menuContainer {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .topbarContainer {
+    height: 15vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .topbarContent {
+    width: 90%;
+  }
+
+  .companyContainer img {
+    width: 28%;
+    margin-right: 5px;
+  }
+
+  .companyName h1 {
+    font-size: 1.25em;
+  }
+
+  .companyName p {
+    font-size: 0.75em;
+	display: none;
+  }
+
+  .navigationContainer {
+    display: none;
+  }
+
+  .menuContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menuContainer .icon {
+    font-size: 2.5em;
+	padding: 5px;
+    color: #000;
+  }
+}
