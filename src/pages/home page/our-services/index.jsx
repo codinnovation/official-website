@@ -1,10 +1,20 @@
 import React from "react";
 import styles from "../../../styles/home page/our services.module.css";
 import LightModeIcon from "@mui/icons-material/LightMode";
+import dynamic from "next/dynamic";
+
+const Zoom = dynamic(
+  () => import("react-awesome-reveal").then((mod) => mod.Zoom),
+  {
+    ssr: false
+  }
+);
+
 
 function OurServices() {
   return (
     <>
+    <Zoom delay={100} reset>
       <div className={styles.serviceContainer}>
         <div className={styles.serviceContent}>
           <div className={styles.serviceMainBox}>
@@ -77,6 +87,7 @@ function OurServices() {
           </div>
         </div>
       </div>
+      </Zoom>
     </>
   );
 }

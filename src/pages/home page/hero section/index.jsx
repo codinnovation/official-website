@@ -1,7 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import styles from "../../../styles/home page/hero section.module.css";
 import HeroImage from "../../../../public/hero-img.svg";
+import dynamic from "next/dynamic";
+
+const Slide = dynamic(
+  () => import("react-awesome-reveal").then((mod) => mod.Slide),
+  {
+    ssr: false
+  }
+);
+
+const Roll = dynamic(
+  () => import("react-awesome-reveal").then((mod) => mod.Roll),
+  {
+    ssr: false
+  }
+);
 
 function HeroSection() {
   return (
@@ -17,11 +32,13 @@ function HeroSection() {
           </div>
 
           <div className={styles.heroTagline}>
+            <Roll>
             <h3>
               Replenish seasons may male hath fruit beast were seas saw you
               arrie said man beast whales his void unto last session for bite.
               Set have great you&apos;sll
             </h3>
+            </Roll>
           </div>
 
           <div className={styles.heroButton}>
@@ -31,7 +48,9 @@ function HeroSection() {
         </div>
 
         <div className={styles.heroImage}>
-          <Image src={HeroImage} width={900} height={900} alt="" />
+          <Slide reset duration={1500}>
+            <Image src={HeroImage} width={900} height={900} alt="Hero Image" />
+          </Slide>
         </div>
       </div>
     </div>
