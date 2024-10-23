@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../../styles/home page/top bar.module.css";
 import CODLogo from "../../../../public/logo-w-1 (1).png";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import dynamic from "next/dynamic";
 
 const Bounce = dynamic(
@@ -13,9 +14,16 @@ const Bounce = dynamic(
   }
 );
 
-
+const Slide = dynamic(
+  () => import("react-awesome-reveal").then((mod) => mod.Slide),
+  {
+    ssr: false
+  }
+);
 
 function TopBar() {
+  const [openBottomMenu, setOpenBottomMenu] = useState(false);
+
   return (
     <>
       <Bounce reset>
@@ -43,12 +51,39 @@ function TopBar() {
               </div>
             </div>
 
-            <div className={styles.menuContainer}>
-              <MenuIcon className={styles.icon} />
+            <div
+              className={styles.menuContainer}
+              onClick={() => setOpenBottomMenu(!openBottomMenu)}
+            >
+              {openBottomMenu ? (
+                <CloseIcon className={styles.icon} />
+              ) : (
+                <MenuIcon className={styles.icon} />
+              )}
             </div>
           </div>
         </div>
       </Bounce>
+
+      {openBottomMenu && (
+        <div className={styles.menu}>
+          <Slide>
+            <div className={styles.menuContent}>
+              <div className={styles.menuLink}>
+                <Link href="/">Home</Link>
+                <Link href="/">About</Link>
+                <Link href="/">Services</Link>
+                <Link href="/">Team</Link>
+                <Link href="/">Contact</Link>
+              </div>
+
+              <div className={styles.menuButton}>
+                <button>Get Started</button>
+              </div>
+            </div>
+          </Slide>
+        </div>
+      )}
     </>
   );
 }

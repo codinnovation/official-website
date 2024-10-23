@@ -7,6 +7,7 @@ import Glance from "./glance";
 import Footer from "./footer";
 import Testimonial from "./testimonials";
 
+
 function HomePage() {
   return (
     <>
