@@ -33,17 +33,17 @@ function HeroSection() {
 
           <div className={styles.heroTagline}>
             <Roll>
-            <h3>
-              Replenish seasons may male hath fruit beast were seas saw you
-              arrie said man beast whales his void unto last session for bite.
-              Set have great you&apos;sll
-            </h3>
+              <h3>
+                At the intersection of courage, discipline, and obedience, we
+                unlock innovative possibilities that drive industries forward,
+                creating new opportunities for growth and transformation
+              </h3>
             </Roll>
           </div>
 
           <div className={styles.heroButton}>
-            <button>View Course</button>
             <button>Get Started</button>
+            <button>Watch Now</button>
           </div>
         </div>
 

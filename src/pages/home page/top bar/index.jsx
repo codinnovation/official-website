@@ -33,9 +33,8 @@ function TopBar() {
               <div className={styles.linkContainer}>
                 <Link href="/">Home</Link>
                 <Link href="/">About</Link>
-                <Link href="/">Courses</Link>
-                <Link href="/">Blog</Link>
-                <Link href="/">Pages</Link>
+                <Link href="/">Services</Link>
+                <Link href="/">Team</Link>
                 <Link href="/">Contact</Link>
               </div>
 

@@ -16,13 +16,8 @@ function Footer() {
 
             <div className={styles.description}>
               <p>
-                But when shot real her. Chamber her one visite removal six
-                sending himself boys scot exquisite existend an
+              At the intersection of courage, discipline, and obedience, we unlock innovative possibilities that drive industries forward, creating new opportunities for growth and transformation
               </p>
-            </div>
-
-            <div className={styles.description}>
-              <p>But when shot real her. Chamber her one</p>
             </div>
           </div>
 
