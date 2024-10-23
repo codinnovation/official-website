@@ -82,22 +82,17 @@
   font-size: 1em;
 }
 
-.sectionTwo .button {
+.sectionTwo .socialIcon {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
 }
 
-.sectionTwo .button button {
-  width: 100%;
-  height: 60px;
-  border: none;
-  font-size: 1em;
-  background: linear-gradient(to right, #f85940, #ffff);
-  border-radius: 5px;
-  color: #000;
-  font-weight: 700;
+.sectionTwo .socialIcon .icon {
+  margin-right: 15px;
+  color: #6b6b6b;
+  cursor: pointer;
 }
 
 .sectionThree {
@@ -182,7 +177,6 @@
   .sectionOne .description p {
     font-size: 0.9em;
   }
-  
 
   .sectionThree .header h1 {
     font-family: sans-serif;
@@ -193,7 +187,7 @@
     font-size: 0.9em;
   }
 
-  .contact p{
+  .contact p {
     font-size: 0.9em;
   }
 

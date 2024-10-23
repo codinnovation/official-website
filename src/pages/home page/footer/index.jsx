@@ -3,6 +3,10 @@ import Image from "next/image";
 import styles from "../../../styles/home page/footer.module.css";
 import CODLogo from "../../../../public/logo-w-1 (1).png";
 import dynamic from "next/dynamic";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Slide = dynamic(
   () => import("react-awesome-reveal").then((mod) => mod.Slide),
@@ -10,6 +14,23 @@ const Slide = dynamic(
     ssr: false
   }
 );
+
+function GoToWhatsApp() {
+  let phoneNumber = "+233500976882";
+  let message = "Hello, I would like to inquire about...";
+  let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  window.open(whatsappURL, "_blank");
+}
+
+function GoToFacebook() {
+  let facebookURL =
+    "https://www.facebook.com/profile.php?id=61559909200927&sk=about";
+
+  window.open(facebookURL, "_blank");
+}
 
 function Footer() {
   return (
@@ -44,8 +65,11 @@ function Footer() {
                 </p>
               </div>
 
-              <div className={styles.button}>
-                <button>Click to Join</button>
+              <div className={styles.socialIcon}>
+                <WhatsAppIcon className={styles.icon} onClick={GoToWhatsApp} />
+                <FacebookIcon className={styles.icon} onClick={GoToFacebook} />
+                <InstagramIcon className={styles.icon} />
+                <LinkedInIcon className={styles.icon} />
               </div>
             </div>
 
