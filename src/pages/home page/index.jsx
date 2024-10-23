@@ -5,6 +5,7 @@ import OurServices from "./our-services";
 import AboutUs from "./about us";
 import Glance from "./glance";
 import Footer from "./footer";
+import Testimonial from "./testimonials";
 
 function HomePage() {
   return (
@@ -15,7 +16,8 @@ function HomePage() {
         <OurServices />
         <AboutUs />
         <Glance />
-        <Footer/>
+        <Testimonial />
+        <Footer />
       </div>
     </>
   );

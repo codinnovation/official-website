@@ -11,12 +11,6 @@ const Slide = dynamic(
   }
 );
 
-const Roll = dynamic(
-  () => import("react-awesome-reveal").then((mod) => mod.Roll),
-  {
-    ssr: false
-  }
-);
 
 function HeroSection() {
   return (
@@ -31,15 +25,15 @@ function HeroSection() {
             <h1>COD Innovations</h1>
           </div>
 
-          <div className={styles.heroTagline}>
-            <Roll>
+          <Slide direction="right">
+            <div className={styles.heroTagline}>
               <h3>
                 At the intersection of courage, discipline, and obedience, we
                 unlock innovative possibilities that drive industries forward,
                 creating new opportunities for growth and transformation
               </h3>
-            </Roll>
-          </div>
+            </div>
+          </Slide>
 
           <div className={styles.heroButton}>
             <button>Get Started</button>
@@ -48,7 +42,7 @@ function HeroSection() {
         </div>
 
         <div className={styles.heroImage}>
-          <Slide reset duration={1500}>
+          <Slide reset duration={1500} direction="left">
             <Image src={HeroImage} width={900} height={900} alt="Hero Image" />
           </Slide>
         </div>
