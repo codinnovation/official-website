@@ -18,7 +18,7 @@ function HeroSection() {
       <div className={styles.heroContent}>
         <div className={styles.heroDescriptionContainer}>
           <div className={styles.heroDescriptionCaption}>
-            <p>Every Child Yearns To Learn</p>
+            <p>Courage, Obedience, and Discipline</p>
           </div>
           <div className={styles.heroDescriptionHeader}>
             <h1>Welcome To </h1>

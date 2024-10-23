@@ -43,6 +43,7 @@ function TopBar() {
                 <Link href="/">About</Link>
                 <Link href="/">Services</Link>
                 <Link href="/team">Team</Link>
+                <Link href="/portfolio">Portfolio</Link>
                 <Link href="/">Contact</Link>
               </div>
 
@@ -74,6 +75,7 @@ function TopBar() {
                 <Link href="/">About</Link>
                 <Link href="/">Services</Link>
                 <Link href="/team">Team</Link>
+                <Link href="/portfolio">Portfolio</Link>
                 <Link href="/">Contact</Link>
               </div>
 
