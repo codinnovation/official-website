@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "../../../styles/home page/hero section.module.css";
 import HeroImage from "../../../../public/hero-img.svg";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import dynamic from "next/dynamic";
 
 const Slide = dynamic(
@@ -10,7 +11,6 @@ const Slide = dynamic(
     ssr: false
   }
 );
-
 
 function HeroSection() {
   return (
@@ -36,9 +36,9 @@ function HeroSection() {
           </Slide>
 
           <div className={styles.heroButton}>
-            <button>Get Started</button>
             <button>Watch Now</button>
-          </div>
+            <PlayArrowIcon className={`${styles.icon} ${styles.animatedIcon}`} />
+            </div>
         </div>
 
         <div className={styles.heroImage}>

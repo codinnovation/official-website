@@ -6,6 +6,7 @@ import CODLogo from "../../../../public/logo-w-1 (1).png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 
 const Bounce = dynamic(
   () => import("react-awesome-reveal").then((mod) => mod.Bounce),
@@ -22,7 +23,12 @@ const Slide = dynamic(
 );
 
 function TopBar() {
+  const router = useRouter();
   const [openBottomMenu, setOpenBottomMenu] = useState(false);
+
+  const getActiveClass = (path) => {
+    return router.pathname === path ? styles.activeLink : "";
+  };
 
   return (
     <>
@@ -30,7 +36,7 @@ function TopBar() {
         <div className={styles.topbarContainer}>
           <div className={styles.topbarContent}>
             <div className={styles.companyContainer}>
-              <Image src={CODLogo} width={100} height={100} alt="" />
+              <Image src={CODLogo} width={90} height={90} alt="" />
               <div className={styles.companyName}>
                 <h1>Innovations</h1>
                 <p>COD Innovations</p>
@@ -39,12 +45,24 @@ function TopBar() {
 
             <div className={styles.navigationContainer}>
               <div className={styles.linkContainer}>
-                <Link href="/">Home</Link>
-                <Link href="/">About</Link>
-                <Link href="/">Services</Link>
-                <Link href="/team">Team</Link>
-                <Link href="/portfolio">Portfolio</Link>
-                <Link href="/">Contact</Link>
+                <Link href="/" legacyBehavior>
+                  <a className={getActiveClass("/")}>Home</a>
+                </Link>
+                <Link href="/about" legacyBehavior>
+                  <a className={getActiveClass("/about")}>About</a>
+                </Link>
+                <Link href="/services" legacyBehavior>
+                  <a className={getActiveClass("/services")}>Services</a>
+                </Link>
+                <Link href="/team" legacyBehavior>
+                  <a className={getActiveClass("/team")}>Team</a>
+                </Link>
+                <Link href="/portfolio" legacyBehavior>
+                  <a className={getActiveClass("/portfolio")}>Portfolio</a>
+                </Link>
+                <Link href="/contact" legacyBehavior>
+                  <a className={getActiveClass("/contact")}>Contact</a>
+                </Link>
               </div>
 
               <div className={styles.navigationButton}>
@@ -71,12 +89,24 @@ function TopBar() {
           <Slide>
             <div className={styles.menuContent}>
               <div className={styles.menuLink}>
-                <Link href="/">Home</Link>
-                <Link href="/">About</Link>
-                <Link href="/">Services</Link>
-                <Link href="/team">Team</Link>
-                <Link href="/portfolio">Portfolio</Link>
-                <Link href="/">Contact</Link>
+              <Link href="/" legacyBehavior>
+                  <a className={getActiveClass("/")}>Home</a>
+                </Link>
+                <Link href="/about" legacyBehavior>
+                  <a className={getActiveClass("/about")}>About</a>
+                </Link>
+                <Link href="/services" legacyBehavior>
+                  <a className={getActiveClass("/services")}>Services</a>
+                </Link>
+                <Link href="/team" legacyBehavior>
+                  <a className={getActiveClass("/team")}>Team</a>
+                </Link>
+                <Link href="/portfolio" legacyBehavior>
+                  <a className={getActiveClass("/portfolio")}>Portfolio</a>
+                </Link>
+                <Link href="/contact" legacyBehavior>
+                  <a className={getActiveClass("/contact")}>Contact</a>
+                </Link>
               </div>
 
               <div className={styles.menuButton}>

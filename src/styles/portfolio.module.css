@@ -19,27 +19,40 @@
 
 .portfolioContent {
   width: 65%;
+  height: 70vh;
   margin: 0 auto;
   margin-top: 4%;
+  background-color: #ccc;
 }
 
-.portfolioContent .header {
-  margin-bottom: 20px;
+.portfolioBox {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  height: 100%;
+  padding: 20px;
+}
+.portfolioBox .arrow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
 }
 
-.portfolioContent .header h1 {
-  font-family: sans-serif;
-  font-size: 1.5em;
+.portfolioBox .arrowTwo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
 
-.carouselImage {
+.portfolioBoxImage {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.carouselImage img {
-  width: 80%;
+.portfolioBoxImage img {
+  width: 100%;
   height: auto;
 }
 
@@ -65,7 +78,7 @@
   }
 
   .carouselImage img {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
   }
 }

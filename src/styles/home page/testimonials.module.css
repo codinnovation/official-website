@@ -82,7 +82,19 @@
 
 .star .icon {
   color: #f85940;
+  animation: blink 2s infinite ease-in-out;
 }
+
+@keyframes blink {
+  0%, 100% {
+    color: #008374;
+  }
+  50% {
+    color: #f85940; 
+  }
+}
+
+
 
 @media (max-width: 600px) {
 	.testimonialContainer {

@@ -34,6 +34,7 @@
   height: auto;
   border-radius: 50%;
   background-color: #ccc;
+  padding: 3px;
 }
 
 .teamName {
@@ -93,6 +94,28 @@
   border-radius: 50%;
   padding: 5px;
   font-size: 2em;
+  animation: blink 1.5s infinite ease-in-out,
+  shadowPulse 2s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    color: #008374;
+  }
+  50% {
+    color: #f85940;
+  }
+}
+
+@keyframes shadowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
 }
 
 @media (max-width: 600px) {
@@ -138,24 +161,23 @@
 
   .teamRoleDescription {
     width: 100%;
-	margin-top: 20px;
+    margin-top: 20px;
   }
 
   .teamRoleDescription p {
     font-size: 0.9em;
   }
 
-  .socialHandles{
-	margin-top: 0;
+  .socialHandles {
+    margin-top: 0;
   }
 
   .socialHandles .icon {
-	color: #f85940;
-	margin: 15px;
-	border: 1px solid #ccc;
-	border-radius: 50%;
-	padding: 5px;
-	font-size: 2em;
+    color: #f85940;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 2em;
   }
-  
 }
