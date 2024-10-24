@@ -1,27 +1,35 @@
 import React from "react";
 import Image from "next/image";
-import Layout from "../layout";
-import styles from "../../styles/portfolio.module.css";
+import styles from "../../../styles/home page/portfolio.module.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
-import ProjectOne from "../../../public/projects/project-1.png";
-import ProjectTwo from "../../../public/projects/project-2.png";
-import ProjectThree from "../../../public/projects/project-3.png";
+import ProjectOne from "../../../../public/projects/project-1.png";
+import ProjectTwo from "../../../../public/projects/project-2.png";
+import ProjectThree from "../../../../public/projects/project-3.png";
+import dynamic from "next/dynamic";
+
+const Slide = dynamic(
+  () => import("react-awesome-reveal").then((mod) => mod.Slide),
+  {
+    ssr: false
+  }
+);
 
 function Portfolio() {
   return (
     <>
-      <Layout>
+      <Slide direction="right">
         <div className={styles.portfolioContainer}>
-          <div className={styles.portfolioContainerHeader}>
-            <h1>Innovative </h1>
-            <h1>Projects</h1>
+          <div className={styles.header}>
+            <hr />
+            <h1>Innovative Project</h1>
           </div>
 
           <div className={styles.portfolioContent}>
-            <div className={styles.header}>
+            <div className={styles.portfolioContentheader}>
               <h1>Juaben APS School Management System</h1>
             </div>
+
             <Carousel
               showThumbs={false}
               infiniteLoop={true}
@@ -64,9 +72,8 @@ function Portfolio() {
             </Carousel>
           </div>
         </div>
-      </Layout>
+      </Slide>
     </>
   );
 }
-
 export default Portfolio;

@@ -65,7 +65,7 @@
 	.glanceContent{
 		grid-template-columns: 1fr;
 		width: 90%;
-		margin-top: 15%;
+		margin-top: 30%;
 		gap: 50px;
 		padding: 20px;
 	}

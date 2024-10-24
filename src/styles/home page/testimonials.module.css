@@ -29,7 +29,7 @@
   align-items: center;
   width: 65%;
   margin: 0 auto;
-  margin-top: 4%;
+  margin-top: 2.5%;
 }
 
 .box {
@@ -70,6 +70,7 @@
 .message p {
   text-align: center;
   font-weight: 100;
+  color: #6b6b6b;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -86,21 +87,39 @@
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     color: #008374;
   }
   50% {
-    color: #f85940; 
+    color: #f85940;
   }
 }
 
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5%;
+}
 
+.navigation .icon {
+  font-size: 3em;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navigation .icon:hover {
+  background-color: #f3f3f3f3;
+}
 
 @media (max-width: 600px) {
-	.testimonialContainer {
-		width: 100;
-		margin-top: 15%;
-	  }
+  .testimonialContainer {
+    width: 100;
+    margin-top: 30%;
+  }
   .testimonialContainer .header h1 {
     font-size: 0.85em;
   }
@@ -117,7 +136,7 @@
   }
 
   .boxImage img {
-    width: 35%;
+    width: 50%;
   }
 
   .message {
@@ -130,7 +149,17 @@
   }
 
   .star .icon {
-	color: #f85940;
-	font-size: 1em;
+    color: #f85940;
+    font-size: 1em;
+  }
+
+  .navigation {
+    margin-top: 3%;
+  }
+
+  .navigation .icon {
+    font-size: 2em;
+    margin-left: 0px;
+    margin-right: 10px;
   }
 }

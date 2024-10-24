@@ -1,0 +1,91 @@
+.portfolioContainer {
+  width: 100%;
+  background: linear-gradient(to top, #f85940, #ffff);
+  margin-top: 7%;
+}
+
+.portfolioContainer .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioContainer .header hr {
+  width: 80px;
+  margin-right: 10px;
+  border: 1px solid #f85a40;
+}
+
+.portfolioContainer .header h1 {
+  color: #6b6b6b;
+  font-family: sans-serif;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolioContent {
+  width: 65%;
+  margin: 0 auto;
+  height: auto;
+  padding: 10px;
+  margin-top: 3%;
+}
+
+.portfolioContentheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioContentheader h1 {
+  font-size: 1em;
+  font-family: sans-serif;
+  color: #6b6b6b;
+}
+
+.Carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.Carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .portfolioContainer {
+    width: 100;
+    margin-top: 30%;
+  }
+  .portfolioContainer .header h1 {
+    font-size: 0.85em;
+  }
+
+  .portfolioContainer .header hr {
+    width: 50px;
+    margin-right: 8px;
+  }
+
+  .portfolioContent {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px;
+    margin-top: 3%;
+  }
+
+  .portfolioContentheader h1 {
+    font-size: 0.85em;
+    text-align: center;
+	font-weight: 300;
+  }
+
+  .Carousel {
+    margin-top: 4%;
+  }
+}

@@ -6,7 +6,7 @@ import AboutUs from "./about us";
 import Glance from "./glance";
 import Footer from "./footer";
 import Testimonial from "./testimonials";
-
+import Portfolio from "./portfolio";
 
 function HomePage() {
   return (
@@ -18,6 +18,7 @@ function HomePage() {
         <AboutUs />
         <Glance />
         <Testimonial />
+        <Portfolio />
         <Footer />
       </div>
     </>

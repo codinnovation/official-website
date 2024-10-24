@@ -4,6 +4,8 @@ import Image from "next/image";
 import ClientImage from "../../../../public/harriet.jpg";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import dynamic from "next/dynamic";
+import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const Bounce = dynamic(
   () => import("react-awesome-reveal").then((mod) => mod.Bounce),
@@ -50,6 +52,10 @@ function Testimonial() {
                 <StarRateIcon className={styles.icon} />
               </div>
             </div>
+          </div>
+          <div className={styles.navigation}>
+            <ArrowLeftIcon className={styles.icon} />
+            <ArrowRightIcon className={styles.icon} />
           </div>
         </div>
       </Bounce>

@@ -36,9 +36,11 @@ function HeroSection() {
           </Slide>
 
           <div className={styles.heroButton}>
-            <button>Watch Now</button>
-            <PlayArrowIcon className={`${styles.icon} ${styles.animatedIcon}`} />
-            </div>
+            <button>Contact Us</button>
+            <PlayArrowIcon
+              className={`${styles.icon} ${styles.animatedIcon}`}
+            />
+          </div>
         </div>
 
         <div className={styles.heroImage}>

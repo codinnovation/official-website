@@ -101,7 +101,7 @@
   .aboutContent {
     grid-template-columns: 1fr;
     width: 90%;
-    margin-top: 15%;
+    margin-top: 30%;
   }
 
   .aboutImage img {
