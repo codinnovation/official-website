@@ -29,7 +29,7 @@
 .heroDescriptionCaption p {
   text-transform: uppercase;
   font-size: 0.9em;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
 }
 
@@ -43,7 +43,7 @@
 
 .heroDescriptionHeader h1 {
   font-size: 3.5em;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(7, 7, 31);
   font-weight: 900;
 }
@@ -57,7 +57,7 @@
 
 .heroTagline h3 {
   font-size: 1em;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #5c5c5c;
   font-weight: 500;
 }
@@ -81,28 +81,31 @@
   background: linear-gradient(to right, #f85940, #ffff);
 }
 
-.heroButton .icon{
+.heroButton .icon {
   font-size: 3em;
   border-radius: 50%;
   margin-left: 30px;
   color: #fff;
 }
 
-.animatedIcon{
-  animation: blink 1.5s infinite ease-in-out, shadowPulse 2s infinite ease-in-out;
+.animatedIcon {
+  animation: blink 1.5s infinite ease-in-out,
+    shadowPulse 2s infinite ease-in-out;
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     color: #008374;
   }
   50% {
-    color: #f85940; 
+    color: #f85940;
   }
 }
 
 @keyframes shadowPulse {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
   50% {
@@ -181,6 +184,10 @@
   .heroButton button {
     width: 120px;
     height: 45px;
+  }
+
+  .heroButton .icon {
+    display: none;
   }
 
   .heroButton button:nth-child(2) {
