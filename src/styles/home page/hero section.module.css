@@ -32,6 +32,7 @@
   font-size: 0.9em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
+  color: #5c5c5c;
 }
 
 .heroDescriptionHeader {
@@ -44,7 +45,7 @@
 
 .heroDescriptionHeader h1 {
   font-size: 3.5em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #000;
   font-weight: 700;
 }
@@ -105,8 +106,6 @@
   }
 }
 
-
-
 .heroImage {
   display: flex;
   justify-content: flex-end;
@@ -139,7 +138,7 @@
 
 @media (max-width: 600px) {
   .heroContainer {
-    height: 85vh;
+    height: 83vh;
     border-top-right-radius: 30%;
   }
 
@@ -152,7 +151,7 @@
 
   .heroDescriptionCaption p {
     font-size: 0.6em;
-    display: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   .heroDescriptionHeader {
@@ -181,15 +180,26 @@
   }
 
   .heroButton .icon {
-    display: none;
+    font-size: 2.5em;
+    border-radius: 50%;
+    margin-left: 10px;
   }
 
   .heroButton button:nth-child(2) {
     margin-left: 10px;
   }
 
+  .heroImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .heroImage img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
