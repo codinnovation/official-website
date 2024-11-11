@@ -1,7 +1,15 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -12,25 +20,4 @@
   --tagline-text-font-family: "Gill Sans", "Gill Sans MT", Calibri,
     "Trebuchet MS", sans-serif;
   --header-font-family: sans-serif;
-}
-
-body {
-  color: var(--default-text-color);
-  background-color: var(--default-bg-color);
-}
-
-/* For Chrome, Edge, and Safari */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    border-radius: 10px;
-}
-
-/* For Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: darkgrey transparent;
 }

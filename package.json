@@ -3,25 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
+    "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.11",
     "@mui/material": "^5.15.11",
     "@vimeo/player": "^2.24.0",
     "firebase": "^10.10.0",
-    "framer-motion": "^11.5.5",
-    "next": "14.1.0",
+    "framer-motion": "^11.11.9",
+    "next": "^14.2.15",
+    "pure-react-carousel": "^1.30.1",
     "react": "^18",
+    "react-awesome-reveal": "^4.2.14",
     "react-dom": "^18",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.30.2",
     "react-toastify": "^10.0.5",
     "sharp": "^0.33.5",
-    "video-react": "^0.16.0"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "eslint": "^8",

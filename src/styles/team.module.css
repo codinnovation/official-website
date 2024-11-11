@@ -1,130 +1,183 @@
-.container {
-   width: auto;
+.teamContainer {
+  margin-top: 7%;
 }
 
-.containerHeader {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 5%;
+.teamContainerHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.containerHeader h1 {
-   font-size: 23px;
-   text-transform: uppercase;
-   font-family: sans-serif;
+.teamContainerHeader h1 {
+  font-family: sans-serif;
 }
 
-.containerItems {
-   margin-top: 3%;
-   width: 60%;
-   margin: 2% auto;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 5%;
+.teamContent {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 4%;
 }
 
-.item {
-   background-color: #fff;
-   width: 100%;
-   border: 1px solid #00796b;
-   border-radius: 5px;
+.teamBox {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.item .img {
-   width: 50%;
-   height: auto;
-   margin: 0 auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.teamPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.item .itemDetails {
-   width: 80%;
-   height: 15vh;
-   background-color: #00796b;
-   position: relative;
-   margin: -10% auto;
-   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
-   border-radius: 5px;
+.teamPhoto img {
+  width: 45%;
+  height: auto;
+  border-radius: 50%;
+  background-color: #ccc;
+  padding: 3px;
 }
 
-
-.item .itemDetails .itemDetailsOne {
-   padding: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+.teamName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.item .itemDetails .itemDetailsOne h1 {
-   font-size: 25px;
-   color: #fff;
+.teamName h1 {
+  font-size: 2em;
+  font-family: sans-serif;
+  text-transform: uppercase;
 }
 
-.item .itemDetails .itemDetailsOne span {
-   color: #c1c1c1;
-   font-weight: 400;
+.teamRole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.item .itemDetails .itemDetailsTwo {
-   padding: 10px;
-   display: grid;
-   width: 80%;
-   grid-template-columns: 1fr 1fr 1fr auto;
-   margin: 4% auto;
+.teamRole p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f85940;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 
-.item .itemDetails .itemDetailsTwo .icon {
-   color: #f85a40;
-   border-radius: 50%;
-   padding: 3px;
-   background-color: #fff;
+.teamRoleDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1%;
 }
 
+.teamRoleDescription p {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  color: #000;
+}
 
-@media (max-width:700px) {
-   .containerItems {
-      margin-top: 3%;
-      width: 85%;
-      margin: 10% auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 5%;
-   }
+.socialHandles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
 
-   .containerHeader {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 15%;
-   }
+.socialHandles .icon {
+  color: #f85940;
+  margin-left: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 2em;
+  animation: blink 1.5s infinite ease-in-out,
+  shadowPulse 2s infinite ease-in-out;
+}
 
-   .containerHeader h1 {
-      font-size: 20px;
-   }
+@keyframes blink {
+  0%,
+  100% {
+    color: #008374;
+  }
+  50% {
+    color: #f85940;
+  }
+}
 
-   .item .itemDetails {
-      width: 80%;
-      height: auto;
-      background-color: #00796b;
-      position: relative;
-      margin: -10% auto;
-      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
-      border-radius: 5px;
-   }
+@keyframes shadowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+}
 
-   .item .itemDetails .itemDetailsOne h1 {
-      font-size: 19px;
-      color: #fff;
-      text-wrap: nowrap;
-   }
+@media (max-width: 600px) {
+  .teamContainer {
+    margin-top: 15%;
+  }
 
-   .item .itemDetails .itemDetailsOne span {
-      color: #c1c1c1;
-      font-weight: 400;
-      font-size: 14px;
-   }
+  .teamContainerHeader h1 {
+    font-family: sans-serif;
+    font-size: 1.1em;
+  }
+
+  .teamContent {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7%;
+  }
+
+  .teamBox {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .teamPhoto img {
+    width: 70%;
+  }
+
+  .teamName {
+    margin-top: 10px;
+  }
+
+  .teamName h1 {
+    font-size: 1.1em;
+  }
+
+  .teamRole {
+    margin-top: 5px;
+  }
+
+  .teamRole p {
+    font-size: 1em;
+  }
+
+  .teamRoleDescription {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .teamRoleDescription p {
+    font-size: 0.9em;
+  }
+
+  .socialHandles {
+    margin-top: 0;
+  }
+
+  .socialHandles .icon {
+    color: #f85940;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 2em;
+  }
 }
