@@ -1,6 +1,6 @@
 .testimonialContainer {
   width: 100%;
-  margin-top: 7%;
+  margin-top: 10%;
 }
 
 .testimonialContainer .header {
@@ -27,7 +27,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65%;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   margin-top: 2.5%;
 }

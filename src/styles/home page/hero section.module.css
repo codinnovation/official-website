@@ -8,10 +8,11 @@
 .heroContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  width: 65vw;
+  width: 100%;
+  max-width: 1440px;
   height: 100%;
   margin: 0 auto;
+  gap: 20px;
 }
 
 .heroDescriptionContainer {
@@ -32,7 +33,7 @@
   font-size: 0.9em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
-  color: #5c5c5c;
+  color: #505050d0;
 }
 
 .heroDescriptionHeader {
@@ -44,24 +45,25 @@
 }
 
 .heroDescriptionHeader h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #000;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .heroTagline {
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
 }
 
 .heroTagline h3 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #5c5c5c;
-  font-weight: 500;
+  color: #505050d0;
+  font-weight: 100;
 }
 
 .heroButton {
@@ -72,8 +74,9 @@
 }
 
 .heroButton button {
-  width: 150px;
-  height: 50px;
+  width: 230px;
+  font-size: 1em;
+  height: 70px;
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -83,27 +86,12 @@
   background: linear-gradient(to right, #f85940, #ffff);
 }
 
-.heroButton .icon {
-  font-size: 3em;
-  border-radius: 50%;
-  margin-left: 30px;
-  color: #fff;
-  border: 1px solid #ccc;
+.heroButton button:nth-child(1) {
+  margin-right: 30px;
 }
 
-.animatedIcon {
-  animation: blink 1.5s infinite ease-in-out,
-    shadowPulse 2s infinite ease-in-out;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    color: #008374;
-  }
-  50% {
-    color: #f85940;
-  }
+.heroButton button:nth-child(2) {
+  background: linear-gradient(to right, #ad807a, #ffff);
 }
 
 .heroImage {
@@ -113,7 +101,7 @@
 }
 
 .heroImage img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   animation: shake 3s ease-in-out infinite;
 }
@@ -151,7 +139,8 @@
 
   .heroDescriptionCaption p {
     font-size: 0.6em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
   }
 
   .heroDescriptionHeader {
@@ -175,8 +164,9 @@
   }
 
   .heroButton button {
-    width: 120px;
-    height: 45px;
+    width: 200px;
+    height: 55px;
+    font-size: 0.85em;
   }
 
   .heroButton .icon {

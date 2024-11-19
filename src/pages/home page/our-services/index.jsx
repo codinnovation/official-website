@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "../../../styles/home page/our services.module.css";
 import LightModeIcon from "@mui/icons-material/LightMode";
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
+import SchoolIcon from '@mui/icons-material/School';
 import dynamic from "next/dynamic";
 
 const Zoom = dynamic(
@@ -36,51 +40,51 @@ function OurServices() {
 
             <div className={styles.serviceBox}>
               <div className={styles.serviceBoxIcon}>
-                <LightModeIcon className={styles.icon} />
+                <SchoolIcon className={styles.icon} />
               </div>
 
               <div className={styles.header}>
-                <h1>EdTech Solutions</h1>
+                <h1>Revolutionizing Education </h1>
               </div>
 
               <div className={styles.description}>
                 <p>
-                  Empowering schools with innovative software to streamline
-                  admin tasks, boost student engagement, and improve learning
-                  outcomes.
+                  Smart tools for smarter schools - steamlining operations and
+                  enhancing learning with innovative software solutions
                 </p>
               </div>
             </div>
 
             <div className={styles.serviceBox}>
               <div className={styles.serviceBoxIcon}>
-                <LightModeIcon className={styles.icon} />
+                <LocalLibraryIcon className={styles.icon} />
               </div>
 
               <div className={styles.header}>
-                <h1>Shaping Future Coders</h1>
+                <h1>Empowering Future IT Leaders</h1>
               </div>
 
               <div className={styles.description}>
                 <p>
-                  Mentoring aspiring developers through bootcamps, internships,
-                  and courses to equip them for tech careers.{" "}
+                  Nurturing the next tech generation with expert guidance,
+                  hands-on training, and industry insights
                 </p>
               </div>
             </div>
 
             <div className={styles.serviceBox}>
               <div className={styles.serviceBoxIcon}>
-                <LightModeIcon className={styles.icon} />
+                <HealthAndSafetyIcon className={styles.icon} />
               </div>
 
               <div className={styles.header}>
-                <h1>Custom Digital Solutions</h1>
+                <h1>Connecting Healthcare Smarter</h1>
               </div>
 
               <div className={styles.description}>
                 <p>
-                Tailored websites, e-commerce, and software to drive growth and efficiency for businesses.
+                  Building bridges between patients and providers - seamless
+                  booking, better care, and healthier connections
                 </p>
               </div>
             </div>

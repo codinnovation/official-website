@@ -21,25 +21,25 @@ function HeroSection() {
             <p>Courage, Obedience, and Discipline</p>
           </div>
           <div className={styles.heroDescriptionHeader}>
-            <h1>Welcome To </h1>
-            <h1>COD Innovations</h1>
+            <h1>Innovating for a </h1>
+            <h1>Smarter Future</h1>
           </div>
 
           <Slide direction="right">
             <div className={styles.heroTagline}>
               <h3>
-                At the intersection of courage, discipline, and obedience, we
-                unlock innovative possibilities that drive industries forward,
-                creating new opportunities for growth and transformation
+                We tackle the challenges of outdated education systems,
+                disconnected healthcare services, and a lack of opportunities
+                for aspiring IT professionals. Through our innovative solutions,
+                we transform learning environments, connect healthcare providers
+                with patients, and equip future tech leaders with the skills
+                they need to thrive.
               </h3>
             </div>
           </Slide>
 
           <div className={styles.heroButton}>
-            <button>Contact Us</button>
-            <PlayArrowIcon
-              className={`${styles.icon} ${styles.animatedIcon}`}
-            />
+            <button>Explore Our Services</button>
           </div>
         </div>
 

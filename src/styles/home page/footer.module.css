@@ -6,7 +6,8 @@
 }
 
 .footerContent {
-  width: 65%;
+  width: 100%;
+  max-width: 1440px;
   height: 100%;
   padding-top: 5%;
   margin: 0 auto;

@@ -1,11 +1,12 @@
 .serviceContainer {
   width: 100%;
+  margin-top: 10%;
 }
 
 .serviceContent {
-  width: 65vw;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
-  margin-top: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
@@ -28,7 +29,7 @@
 
 .serviceMainBox .header h1 {
   font-family: sans-serif;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
@@ -64,10 +65,15 @@
   font-weight: 600;
 }
 
+.serviceMainBox .readMore:hover button {
+  background: linear-gradient(to left, #f85940, #ffff);
+}
+
 .serviceBox {
-  border: 1px solid #f1f1f177;
+  border: 1px solid #d2d2d277;
   width: 100%;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .serviceBox:hover {
@@ -81,18 +87,19 @@
 }
 
 .serviceBox:hover .serviceBoxIcon .icon {
-  background: linear-gradient(to right, #008374, #f85a40);
+  background: linear-gradient(to right, #ffff, #f85a40);
   color: #fff;
 }
 
 .serviceBox .serviceBoxIcon .icon {
-  background-color: #cccc;
+  background-color: #ececec;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 4em;
-  padding: 7px;
+  padding: 10px;
   border-radius: 50%;
+  color: #363636;
 }
 
 .serviceBox .header {
@@ -105,7 +112,7 @@
 .serviceBox .header h1 {
   text-align: center;
   font-family: sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .serviceBox .description {

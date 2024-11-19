@@ -1,17 +1,18 @@
 .glanceContainer {
   width: 100%;
   height: 35vh;
+  margin-top: 10%;
   background: linear-gradient(to left, #f85940, #ffff);
 }
 
 .glanceContent {
-  width: 65%;
+  width: 100%;
   height: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
-  margin-top: 7%;
 }
 
 .section {
