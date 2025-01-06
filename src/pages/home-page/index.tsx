@@ -16,16 +16,15 @@ function HomePage() {
 
   return (
     <div
-      className={`opacity-0 ${
-        isVisible ? "opacity-100" : ""
-      } transition-opacity duration-[2000ms] ease-in`}
+      className={`opacity-0 ${isVisible ? "opacity-100" : ""
+        } transition-opacity duration-[2500ms] ease-in`}
     >
       <HeroSection />
       <Services />
       <WhoWeAre />
       <Glance />
-	  <Testimonial/>
-	  <Footer/>
+      <Testimonial />
+      <Footer />
     </div>
   );
 }
