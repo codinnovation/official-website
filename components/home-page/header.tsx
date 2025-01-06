@@ -48,13 +48,13 @@ function Header() {
           </div>
 
           <div className="hidden lg:flex xl:flex justify-end items-center space-x-6">
-            {linksArray.map((link, index) => (
+            {linksArray.map((link) => (
               <Link
-                key={index}
+                key={link.href}
                 href={link.href}
                 className={`font-metropolis-light font-[600] xl:text-[1.05em] lg:text-[0.9em] ${router.pathname === link.href
-                  ? "text-[#000]" // Active color (black)
-                  : "text-[#666]" // Default color (gray)
+                  ? "text-[#000]"
+                  : "text-[#666]"
                   }`}
               >
                 {link.name}
@@ -81,9 +81,9 @@ function Header() {
             <Slide>
               <div className="p-[20px]">
                 <div className="flex flex-col items-start justify-center space-y-8">
-                  {linksArray.map((link, index) => (
+                  {linksArray.map((link) => (
                     <Link
-                      key={index}
+                      key={link.href}
                       href={link.href}
                       className={`font-metropolis-light font-[600] xl:text-[1.05em] lg:text-[0.9em] ${router.pathname === link.href
                         ? "text-[#000]"
