@@ -5,6 +5,7 @@ import WhoWeAre from "./who-we-are";
 import Testimonial from "./testimonials";
 import Glance from "./glance";
 import Footer from "./footer";
+import Head from "next/head";
 
 function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,6 +16,14 @@ function HomePage() {
   }, []);
 
   return (
+    <>
+     <Head>
+        <title>Welcome To Cod - Innovations</title>
+        <meta name="description" content="Welcome to COD Innovations" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-adsense-account" content="ca-pub-6941452448672457"/>
+        <link rel="icon" href="/logo-w-1 (1).png" />
+      </Head>
     <div
       className={`opacity-0 ${isVisible ? "opacity-100" : ""
         } transition-opacity duration-[2500ms] ease-in`}
@@ -26,6 +35,7 @@ function HomePage() {
       <Testimonial />
       <Footer />
     </div>
+    </>
   );
 }
 

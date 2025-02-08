@@ -10,6 +10,7 @@ export default function Home() {
         <title>Welcome To Cod - Innovations</title>
         <meta name="description" content="Welcome to COD Innovations" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-adsense-account" content="ca-pub-6941452448672457"/>
         <link rel="icon" href="/logo-w-1 (1).png" />
       </Head>
       <div>
