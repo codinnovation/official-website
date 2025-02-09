@@ -17,24 +17,24 @@ function HomePage() {
 
   return (
     <>
-     <Head>
+      <Head>
         <title>Welcome To Cod - Innovations</title>
         <meta name="description" content="Welcome to COD Innovations" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="google-adsense-account" content="ca-pub-6941452448672457"/>
+        <meta name="google-adsense-account" content={process.env.NEXT_PUBLIC_ADSENSE_ID} />
         <link rel="icon" href="/logo-w-1 (1).png" />
       </Head>
-    <div
-      className={`opacity-0 ${isVisible ? "opacity-100" : ""
-        } transition-opacity duration-[2500ms] ease-in`}
-    >
-      <HeroSection />
-      <Services />
-      <WhoWeAre />
-      <Glance />
-      <Testimonial />
-      <Footer />
-    </div>
+      <div
+        className={`opacity-0 ${isVisible ? "opacity-100" : ""
+          } transition-opacity duration-[2500ms] ease-in`}
+      >
+        <HeroSection />
+        <Services />
+        <WhoWeAre />
+        <Glance />
+        <Testimonial />
+        <Footer />
+      </div>
     </>
   );
 }

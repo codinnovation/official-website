@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import LogoW2 from "../../../../public/logo-w-2.png";
 
 function Footer() {
   return (
