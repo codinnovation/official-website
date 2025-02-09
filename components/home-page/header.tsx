@@ -20,7 +20,6 @@ function Header() {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Team", href: "/teams" },
-    { name: "Innovations", href: "/p/innovations" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -47,7 +46,7 @@ function Header() {
             </h1>
           </div>
 
-          <div className="hidden lg:flex xl:flex justify-end items-center space-x-6">
+          <div className="hidden lg:flex xl:flex justify-end items-center space-x-10">
             {linksArray.map((link) => (
               <Link
                 key={link.href}
