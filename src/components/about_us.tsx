@@ -1,8 +1,12 @@
 import React from 'react';
+import Head from 'next/head';
 
 function About_us() {
     return (
         <>
+            <Head>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossOrigin="anonymous"></script>
+            </Head>
             <div className='w-full h-full mt-16 2xl:mt-32'>
                 <div className='w-11/12 mx-auto 2xl:w-8/12'>
 
