@@ -3,17 +3,17 @@ import React from 'react';
 function Recent_blog_post() {
   return (
     <>
-      <div className='mt-32 bg-[#f8f9fa] '> {/* Light gray background for the section */}
-        <div className='w-8/12 mx-auto'>
+      <div className='mt-16 2xl:mt-32 bg-[#f8f9fa] '>
 
+        <div className='w-11/12 mx-auto 2xl:w-8/12'>
           {/* Section Heading */}
           <div className='flex flex-col justify-center items-start'>
-            <h1 className='text-[#000] font-metropolis-bold uppercase text-xl'>Recent Blog Posts</h1>
-            <div className='bg-[#ef6603] w-20 h-1 rounded-full'></div>
-          </div>
+            <h1 className='text-[#000] font-metropolis-bold uppercase text-base 2xl:text-xl'>Recent Blog Posts</h1>
+            <div className='bg-[#ef6603] w-16 h-1 rounded-full 2xl:w-20'></div>
+            </div>
 
           {/* Blog Posts Grid */}
-          <div className='grid grid-cols-3 gap-10 mt-10'>
+          <div className='grid grid-cols-1 gap-10 mt-10 2xl:grid-cols-3'>
 
             {/* Blog Post 1 */}
             <div className='flex flex-col items-start bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300'>

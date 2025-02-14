@@ -3,17 +3,17 @@ import React from 'react';
 function Contact_us() {
   return (
     <>
-      <div className='mt-32 bg-gradient-to-r from-[#31333f] to-[#1a1c24] py-16'> {/* Gradient background */}
-        <div className='w-8/12 mx-auto'>
+      <div className='bg-gradient-to-r from-[#31333f] to-[#1a1c24] py-16 mt-16 2xl:mt-32'> 
+        <div className='w-11/12 mx-auto 2xl:w-8/12'>
 
           {/* Section Heading */}
           <div className='flex flex-col justify-center items-start'>
-            <h1 className='text-white font-metropolis-bold uppercase text-xl'>Contact Us</h1>
-            <div className='bg-[#ef6603] w-20 h-1 rounded-full'></div>
-          </div>
+            <h1 className='text-white font-metropolis-bold uppercase text-base 2xl:text-xl'>Contact Us</h1>
+            <div className='bg-[#ef6603] w-16 h-1 rounded-full 2xl:w-20'></div>
+            </div>
 
           {/* Contact Content */}
-          <div className='grid grid-cols-2 gap-10 mt-10'>
+          <div className='grid grid-cols-1 gap-10 mt-10 2xl:grid-cols-2'>
 
             {/* Contact Form */}
             <div className='flex flex-col'>
@@ -58,7 +58,7 @@ function Contact_us() {
             <div className='flex flex-col space-y-10'>
               {/* Contact Information */}
               <div className='space-y-6'>
-                <h2 className='text-white font-metropolis-bold text-lg'>Get in Touch</h2>
+                <h2 className='text-white font-metropolis-bold text-base 2xl:text-lg'>Get in Touch</h2>
                 <div className='space-y-4'>
                   <div className='flex items-center space-x-4'>
                     <div className='bg-[#ef6603] p-3 rounded-full'>
@@ -67,7 +67,7 @@ function Contact_us() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                       </svg>
                     </div>
-                    <p className='text-white font-nexa-light'>123 Innovation Drive, Tech City, TC 12345</p>
+                    <p className='text-white font-nexa-light text-sm 2xl:text-base'>123 Innovation Drive, Tech City, TC 12345</p>
                   </div>
                   <div className='flex items-center space-x-4'>
                     <div className='bg-[#ef6603] p-3 rounded-full'>
@@ -75,7 +75,7 @@ function Contact_us() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                       </svg>
                     </div>
-                    <p className='text-white font-nexa-light'>(123) 456-7890</p>
+                    <p className='text-white font-nexa-light text-sm 2xl:text-base'>(123) 456-7890</p>
                   </div>
                   <div className='flex items-center space-x-4'>
                     <div className='bg-[#ef6603] p-3 rounded-full'>
@@ -83,7 +83,7 @@ function Contact_us() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                       </svg>
                     </div>
-                    <p className='text-white font-nexa-light'>info@codinnovations.com</p>
+                    <p className='text-white font-nexa-light text-sm 2xl:text-base'>info@codinnovations.com</p>
                   </div>
                 </div>
               </div>

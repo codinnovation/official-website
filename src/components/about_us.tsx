@@ -3,16 +3,16 @@ import React from 'react';
 function About_us() {
     return (
         <>
-            <div className='w-full h-full mt-32'>
-                <div className='w-8/12 mx-auto'>
+            <div className='w-full h-full mt-16 2xl:mt-32'>
+                <div className='w-11/12 mx-auto 2xl:w-8/12'>
 
                     {/* Section: Who We Are */}
                     <div className='flex flex-col justify-center items-start'>
-                        <h1 className='text-[#000] font-metropolis-bold uppercase text-xl'>Who We Are</h1>
-                        <div className='bg-[#ef6603] w-20 h-1 rounded-full'></div>
+                        <h1 className='text-[#000] font-metropolis-bold uppercase text-base 2xl:text-xl'>Who We Are</h1>
+                        <div className='bg-[#ef6603] w-16 h-1 rounded-full 2xl:w-20'></div>
                     </div>
 
-                    <div className='grid grid-cols-2 mt-10 gap-10'>
+                    <div className='grid grid-cols-1 mt-10 gap-10 2xl:grid-cols-2'>
                         <div className='flex flex-col'>
                             <p className='text-[#000] font-nexa-light'>
                                 At Cod Innovations, we are a team of passionate innovators dedicated to transforming industries through cutting-edge technology. Our mission is to bridge the gap between people and possibilities by delivering solutions that empower businesses, enhance education, and revolutionize healthcare.
@@ -38,11 +38,11 @@ function About_us() {
                     {/* Section: Our Values */}
                     <div className='mt-20'>
                         <div className='flex flex-col justify-center items-start'>
-                            <h1 className='text-[#000] font-metropolis-bold uppercase text-xl'>Our Values</h1>
+                            <h1 className='text-[#000] font-metropolis-bold uppercase text-base 2xl:text-xl'>Our Values</h1>
                             <div className='bg-[#ef6603] w-20 h-1 rounded-full'></div>
                         </div>
 
-                        <div className='grid grid-cols-3 gap-10 mt-5'>
+                        <div className='grid grid-cols-1 gap-10 mt-5 2xl:grid-cols-3'>
                             <div className='flex flex-col'>
                                 <h2 className='text-[#000] font-metropolis-bold text-lg'>Courage</h2>
                                 <p className='text-[#000] font-nexa-light mt-2'>
