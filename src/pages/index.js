@@ -17,15 +17,16 @@ export default function Home() {
         <meta name="description" content="Welcome to COD Innovations" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/logo-w-1 (1).png" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossOrigin="anonymous"></script>
       </Head>
       <div className="w-full h-full">
         <Hero_section />
-        <About_us/>
-        <Call_to_action/>
-        <What_we_do_better/>
-        <Recent_blog_post/>
-        <Contact_us/>
-        <Footer/>
+        <About_us />
+        <Call_to_action />
+        <What_we_do_better />
+        <Recent_blog_post />
+        <Contact_us />
+        <Footer />
       </div>
     </>
   );
