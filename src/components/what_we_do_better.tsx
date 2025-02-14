@@ -3,17 +3,17 @@ import React from 'react';
 function What_we_do_better() {
     return (
         <>
-            <div className='w-full h-full mt-32'>
-                <div className='w-8/12 mx-auto'>
+            <div className='w-full h-full mt-16 2xl:mt-32'>
+                <div className='w-11/12 mx-auto 2xl:w-8/12'>
 
                     {/* Section Heading */}
                     <div className='flex flex-col justify-center items-start'>
-                        <h1 className='text-[#000] font-metropolis-bold uppercase text-xl'>What We Offer</h1>
-                        <div className='bg-[#ef6603] w-20 h-1 rounded-full'></div>
+                        <h1 className='text-[#000] font-metropolis-bold uppercase text-base 2xl:text-xl'>What We Offer</h1>
+                        <div className='bg-[#ef6603] w-16 h-1 rounded-full 2xl:w-20'></div>
                     </div>
 
                     {/* Services Grid */}
-                    <div className='grid grid-cols-3 gap-10 mt-10'>
+                    <div className='grid grid-cols-1 gap-10 mt-10 2xl:grid-cols-3'>
                         {/* Service 1: Education */}
                         <div className='flex flex-col items-start p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300'>
                             <div className='bg-[#ef6603] p-3 rounded-full'>

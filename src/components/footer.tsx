@@ -4,23 +4,23 @@ import Link from 'next/link';
 function Footer() {
   return (
     <>
-      <div className='mt-32 bg-[#f8f9fa] py-16'> {/* Light gray background */}
-        <div className='w-8/12 mx-auto'>
+      <div className='bg-[#f8f9fa] py-10 mt-16 2xl:py-16 2xl:mt-32'> {/* Light gray background */}
+        <div className='w-11/12 mx-auto 2xl:w-8/12'>
 
           {/* Footer Content */}
-          <div className='grid grid-cols-4 gap-10'>
+          <div className='grid grid-cols-1 gap-10 2xl:grid-cols-4'>
 
             {/* About Us */}
-            <div className='flex flex-col space-y-4'>
-              <h2 className='text-[#1a1c24] font-metropolis-bold text-lg'>About Us</h2>
-              <p className='text-[#4a4a4a] font-nexa-light'>
+            <div className='flex flex-col space-y-3'>
+              <h2 className='text-[#1a1c24] font-metropolis-bold text-base 2xl:text-lg'>About Us</h2>
+              <p className='text-[#4a4a4a] font-nexa-light text-sm 2xl:text-base'>
                 Cod Innovations is a leading technology company dedicated to transforming industries through innovative solutions. We empower businesses, enhance education, and revolutionize healthcare.
               </p>
             </div>
 
             {/* Quick Links */}
-            <div className='flex flex-col space-y-4'>
-              <h2 className='text-[#1a1c24] font-metropolis-bold text-lg'>Quick Links</h2>
+            <div className='flex flex-col space-y-3'>
+              <h2 className='text-[#1a1c24] font-metropolis-bold text-base 2xl:text-lg'>Quick Links</h2>
               <ul className='space-y-2'>
                 <li><Link href="/" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>Home</Link></li>
                 <li><a href="/about" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>About Us</a></li>
@@ -32,17 +32,17 @@ function Footer() {
 
             {/* Contact Information */}
             <div className='flex flex-col space-y-4'>
-              <h2 className='text-[#1a1c24] font-metropolis-bold text-lg'>Contact Us</h2>
+              <h2 className='text-[#1a1c24] font-metropolis-bold text-base 2xl:text-lg'>Contact Us</h2>
               <div className='space-y-2'>
-                <p className='text-[#4a4a4a] font-nexa-light'>123 Innovation Drive, Tech City, TC 12345</p>
-                <p className='text-[#4a4a4a] font-nexa-light'>(123) 456-7890</p>
-                <p className='text-[#4a4a4a] font-nexa-light'>info@codinnovations.com</p>
+                <p className='text-[#4a4a4a] font-nexa-light text-sm 2xl:text-base'>123 Innovation Drive, Tech City, TC 12345</p>
+                <p className='text-[#4a4a4a] font-nexa-light text-sm 2xl:text-base'>(123) 456-7890</p>
+                <p className='text-[#4a4a4a] font-nexa-light text-sm 2xl:text-base'>info@codinnovations.com</p>
               </div>
             </div>
 
             {/* Social Media Links */}
-            <div className='flex flex-col space-y-4'>
-              <h2 className='text-[#1a1c24] font-metropolis-bold text-lg'>Follow Us</h2>
+            <div className='flex flex-col space-y-3'>
+              <h2 className='text-[#1a1c24] font-metropolis-bold text-base 2xl:text-lg'>Follow Us</h2>
               <div className='flex space-x-4'>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                   <svg className="w-6 h-6 text-[#4a4a4a] hover:text-[#ef6603] transition duration-300" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
