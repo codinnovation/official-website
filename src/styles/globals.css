@@ -28,6 +28,34 @@
   src: url("../../public/fonts/ArianaProLight.otf");
 }
 
+@font-face {
+  font-family: "fontspring";
+  src: url("../../public/fonts/Fontspring-DEMO-breulgroteskb-black.otf");
+}
+
+@font-face {
+  font-family: "fontspring-regular";
+  src: url("../../public/fonts/Fontspring-DEMO-breulgroteskb-regular.otf");
+}
+
+@font-face {
+  font-family: "ruhma";
+  src: url("../../public/fonts/Ruhma\ Font\ Regular.otf");
+}
+
+@font-face {
+  font-family: "nexa-light";
+  src: url("../../public/fonts/NexaLight.otf");
+}
+
+@font-face {
+  font-family: "nexa-bold";
+  src: url("../../public/fonts/NexaBold.otf");
+}
+
+
+
+
 ::-webkit-scrollbar {
   width: 3px;
 }
