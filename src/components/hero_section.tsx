@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
+import Head from "next/head";
 
 function Hero_section() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,6 +46,10 @@ function Hero_section() {
   };
 
   return (
+    <>
+    <Head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossOrigin="anonymous"></script>
+    </Head>
     <div className="min-h-[80vh] h-full w-full bg-gradient-to-r from-[#31333f] to-[#1a1c24] relative overflow-hidden 2xl:min-h-[75vh]">
       {/* Navigation Section */}
       <div className={`w-full fixed top-0 left-0 right-0 z-50 ${isScrolled ? "bg-[#1a1c24]" : ""}`}>
@@ -189,6 +194,7 @@ function Hero_section() {
         </svg>
       </div>
     </div>
+    </>
   );
 }
 
