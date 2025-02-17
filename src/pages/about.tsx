@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Hero_section from "../components/hero_section";
 import Head from 'next/head'
+import Image from "next/image";
 
 function About() {
   // Animation variants
@@ -149,10 +150,11 @@ function About() {
                   variants={fadeInRight}
                   transition={{ delay: index * 0.2 }}
                 >
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
                     className="w-full h-48 object-cover rounded-lg"
+                    width={900} height={900}
                   />
                   <h2 className="text-[#1a1c24] font-metropolis-bold text-lg">
                     {member.name}
