@@ -4,9 +4,13 @@ import Head from 'next/head';
 function About_us() {
     return (
         <>
-            <Head>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossOrigin="anonymous"></script>
-            </Head>
+              <Head>
+        <title>Welcome To Cod - Innovations | About Us</title>
+        <meta name="description" content="Welcome to COD Innovations - About us" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/logo-w-1 (1).png" />
+        <meta name="google-adsense-account" content="ca-pub-6941452448672457"/>
+      </Head>
             <div className='w-full h-full mt-16 2xl:mt-32'>
                 <div className='w-11/12 mx-auto 2xl:w-8/12'>
 
