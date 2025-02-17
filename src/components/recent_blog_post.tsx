@@ -1,8 +1,16 @@
 import React from 'react';
+import Head from 'next/head';
 
 function Recent_blog_post() {
   return (
     <>
+   <Head>
+        <title>Welcome To Cod - Innovations | About Us</title>
+        <meta name="description" content="Welcome to COD Innovations - About us" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/logo-w-1 (1).png" />
+        <meta name="google-adsense-account" content="ca-pub-6941452448672457"/>
+      </Head>
       <div className='mt-16 2xl:mt-32 bg-[#f8f9fa] '>
 
         <div className='w-11/12 mx-auto 2xl:w-8/12'>
