@@ -23,10 +23,10 @@ function Footer() {
               <h2 className='text-[#1a1c24] font-metropolis-bold text-base 2xl:text-lg'>Quick Links</h2>
               <ul className='space-y-2'>
                 <li><Link href="/" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>Home</Link></li>
-                <li><a href="/about" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>About Us</a></li>
-                <li><a href="/services" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>Services</a></li>
-                <li><a href="/blog" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>Blog</a></li>
-                <li><a href="/contact" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>Contact Us</a></li>
+                <li><Link href="/about" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>About Us</Link></li>
+                <li><Link href="/services" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>Services</Link></li>
+                <li><Link href="/blog" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>Blog</Link></li>
+                <li><Link href="/contact" className='text-[#4a4a4a] font-nexa-light hover:text-[#ef6603] transition duration-300'>Contact Us</Link></li>
               </ul>
             </div>
 
