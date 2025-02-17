@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next/image'
 
 function Recent_blog_post() {
   return (
@@ -25,10 +26,11 @@ function Recent_blog_post() {
 
             {/* Blog Post 1 */}
             <div className='flex flex-col items-start bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300'>
-              <img 
+              <Image 
                 src="https://www.21kschool.com/gh/wp-content/uploads/sites/33/2023/09/Pros-and-Cons-of-Using-Education-Technology.png" 
                 alt="Blog Post 1" 
                 className='w-full h-48 object-cover rounded-t-lg'
+                width={900} height={900}
               />
               <div className='p-6'>
                 <h2 className='text-[#000] font-metropolis-bold text-lg'>
@@ -45,10 +47,11 @@ function Recent_blog_post() {
 
             {/* Blog Post 2 */}
             <div className='flex flex-col items-start bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300'>
-              <img 
+              <Image 
                 src="https://assets.weforum.org/article/image/tWs5W6mwOA_MeVnTEe4EdKpIq5GOyqlscvLUg0Il-8A.jpg" 
                 alt="Blog Post 2" 
                 className='w-full h-48 object-cover rounded-t-lg'
+                width={900} height={900}
               />
               <div className='p-6'>
                 <h2 className='text-[#000] font-metropolis-bold text-lg'>
@@ -65,10 +68,11 @@ function Recent_blog_post() {
 
             {/* Blog Post 3 */}
             <div className='flex flex-col items-start bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300'>
-              <img 
+              <Image 
                 src="https://media.udig.com/2024/05/22134916/iStock-1408588590-min.jpg" 
                 alt="Blog Post 3" 
                 className='w-full h-48 object-cover rounded-t-lg'
+                width={900} height={900}
               />
               <div className='p-6'>
                 <h2 className='text-[#000] font-metropolis-bold text-lg'>
