@@ -47,9 +47,13 @@ function Hero_section() {
 
   return (
     <>
-    <Head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossOrigin="anonymous"></script>
-    </Head>
+      <Head>
+        <title>Welcome To Cod - Innovations | About Us</title>
+        <meta name="description" content="Welcome to COD Innovations - About us" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/logo-w-1 (1).png" />
+        <meta name="google-adsense-account" content="ca-pub-6941452448672457"/>
+      </Head>
     <div className="min-h-[80vh] h-full w-full bg-gradient-to-r from-[#31333f] to-[#1a1c24] relative overflow-hidden 2xl:min-h-[75vh]">
       {/* Navigation Section */}
       <div className={`w-full fixed top-0 left-0 right-0 z-50 ${isScrolled ? "bg-[#1a1c24]" : ""}`}>
