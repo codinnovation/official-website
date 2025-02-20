@@ -11,7 +11,7 @@ function About_us() {
         <link rel="icon" href="/logo-w-1 (1).png" />
         <meta name="google-adsense-account" content="ca-pub-6941452448672457"/>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6941452448672457"
-          crossOrigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
       </Head>
             <div className='w-full h-full mt-16 2xl:mt-32'>
                 <div className='w-11/12 mx-auto 2xl:w-8/12'>
