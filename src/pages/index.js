@@ -17,7 +17,9 @@ export default function Home() {
         <meta name="description" content="Welcome to COD Innovations" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/logo-w-1 (1).png" />
-        <meta name="google-adsense-account" content="ca-pub-6941452448672457"/>
+        <meta name="google-adsense-account" content="ca-pub-6941452448672457" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6941452448672457"
+          crossorigin="anonymous"></script>
       </Head>
       <div className="w-full h-full">
         <Hero_section />

@@ -53,6 +53,8 @@ function Hero_section() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/logo-w-1 (1).png" />
         <meta name="google-adsense-account" content="ca-pub-6941452448672457"/>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6941452448672457"
+          crossOrigin="anonymous"></script>
       </Head>
     <div className="min-h-[80vh] h-full w-full bg-gradient-to-r from-[#31333f] to-[#1a1c24] relative overflow-hidden 2xl:min-h-[75vh]">
       {/* Navigation Section */}
