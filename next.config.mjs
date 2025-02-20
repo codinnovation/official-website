@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["miro.medium.com"],
+    domains: ["www.21kschool.com", "assets.weforum.org", "media.udig.com"], // Combine both domains in one array
   },
 };
 
